@@ -1,0 +1,83 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Andrew Quaye
+ * Date: 04/08/2018
+ * Time: 2:49 AM
+ */
+
+if (isset($_GET['id'])){
+    if ($_GET['full-name']){
+        $name = $_GET['full-name'];
+    }else{
+        $name ="";
+    }
+
+    if($_GET['email']){
+        $email = $_GET['email'];
+    }else{
+        $email = "";
+    }
+
+    if($_GET['mobile']){
+        $mobile = $_GET['mobile'];
+    }else{
+        $mobile = "";
+    }
+
+    $id = $_GET['id'];
+    $_SESSION['address-id'] = $id;
+    $value ="update-contact";
+    $button = "Update";
+}else{
+    $name ="";
+    $email = "";
+    $mobile = "";
+    $value = "add-contact";
+    $button = "Save";
+}
+
+?>
+<hr>
+<div class="col-lg-12">
+    <div class="card">
+        <div class="card-header">
+            Use the grid for big devices!
+            <small>
+                <code>.col-lg-*</code>
+                <code>.col-md-*</code>
+                <code>.col-sm-*</code>
+            </small>
+        </div>
+        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"])?>" method="POST" enctype="application/x-www-form-urlencoded">
+            <div class="card-body card-block">
+                <div class="form-horizontal">
+                    <input type="hidden" name="page" value="model">
+                    <input type="hidden" name="token" value="<?php echo $_GET['token'];?>">
+                    <div class="row form-group">
+                        <div class="col col-md-8">
+                            <label for="x_card_code" class="control-label mb-1">Full Name</label>
+                            <input type="text" name="full-name" value="<?php echo $name;?>" placeholder="full name" class="form-control">
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col col-md-8">
+                            <label for="x_card_code" class="control-label mb-1">Email</label>
+                            <input type="text" name="email" value="<?php echo $email;?>" placeholder="email" class="form-control">
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col col-md-8">
+                            <label for="x_card_code" class="control-label mb-1">Mobile</label>
+                            <input type="text" name="mobile" value="<?php echo $mobile;?>" placeholder="mobile" class="form-control">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                <button type="submit" name="submit" value="<?php echo $value;?>" class="btn btn-primary btn-sm"><?php echo $button;?></button>
+                <button class="btn btn-danger btn-sm">Action</button>
+            </div>
+        </form>
+    </div>
+</div>

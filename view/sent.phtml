@@ -1,0 +1,28 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Andrew Quaye
+ * Date: 02/08/2018
+ * Time: 7:40 AM
+ */
+?>
+<div class="row">
+    <div class="col-lg-12">
+        <h2 class="title-1 m-b-25"></h2>
+        <div class="table-responsive table--no-card m-b-40">
+            <table class="table table-borderless table-striped table-earning">
+                <thead>
+                <tr>
+                    <th>time</th>
+                    <th>Mobile</th>
+                    <th class="text-right">Status</th>
+                    <th class="text-right"></th>
+                </tr>
+                </thead>
+                <tbody>
+                    <?php sent_message($conn);?>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

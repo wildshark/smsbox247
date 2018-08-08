@@ -1,0 +1,69 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Andrew Quaye
+ * Date: 03/08/2018
+ * Time: 7:44 AM
+ */
+
+if (!isset($_REQUEST['submit'])){
+    echo "action not define";
+}else{
+     $action = $_REQUEST['submit'];
+    echo $token = $_REQUEST['token'];
+
+     if (!$_SESSION['token'] === $token){
+         echo "wrong token or cant find token";
+     }else{
+
+         switch ($action){
+
+             case "payment";
+                echo "payment";
+                payment($conn);
+             break;
+
+             case"add-contact";
+                //echo"add.contact";
+                 add_contact($conn);
+             break;
+
+             case"update-contact";
+                //echo"update contact";
+                 edit_contact($conn);
+             break;
+
+             case"send-message";
+                //echo"send-message";
+                 send_message($conn);
+             break;
+
+             case"save-message";
+                echo"save message";
+                 add_draft_message($conn);
+             break;
+
+             case"del.contact";
+                //echo"del contact";
+                delete_contact($conn);
+             break;
+
+             case "status";
+                if ($_GET['u'] == 2){
+                    send_to_bin($conn);
+                }elseif ($_GET['u'] == 1){
+                    restore_msg($conn);
+                }
+             break;
+
+             case"delete-task";
+                 delete_task($conn);
+             break;
+
+             case"delete";
+                 delete_record($conn);
+             break;
+         }
+     }
+}
+

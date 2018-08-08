@@ -1,0 +1,55 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Andrew Quaye
+ * Date: 06/08/2018
+ * Time: 3:15 AM
+ */
+
+$button = new stdClass();
+
+if (isset($_GET['id'])){
+    $id = $_GET['id'];
+    $sql = "select * from get_message where smsID='$id'";
+    $result = $conn->query($sql);
+    $record = $result->fetch_assoc();
+
+    $mobile = $record['sms_to'];
+    $msg = $record['sms_msg'];
+
+}elseif(isset($_GET['mobile'])){
+
+    $mobile = $_GET['mobile'];
+    $msg = "";
+
+}else{
+    $mobile="";
+    $msg ="";
+}
+
+if (!isset($_GET['page'])){
+    exit();
+}else{
+
+    if($_GET['page'] === "send-message" || $_GET['page'] === "resend-message"){
+
+        $button->label = "Send";
+        $button->value = "send-message";
+        $button->css = "btn btn-primary btn-sm";
+        $button->icon = "fa fa-dot-circle-o";
+
+    }elseif ($_GET['page'] ==="view-message"){
+
+        $button->label = "Save & Send";
+        $button->value = "send-message";
+        $button->css = "btn btn-primary btn-sm";
+        $button->icon = "fa fa-dot-circle-o";
+
+    }elseif ($_GET['page'] === "new-drafts"){
+
+        $button->label = "Save Draft";
+        $button->value = "save-message";
+        $button->css = "btn btn-primary btn-sm";
+        $button->icon = "fa fa-dot-circle-o";
+    }
+}

@@ -1,0 +1,40 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Andrew Quaye
+ * Date: 02/08/2018
+ * Time: 5:45 AM
+ */
+function main_menu_sidebar(){
+
+    $url = $_SESSION['page-url'];
+    $url_token = $_SESSION['token'];
+    return"
+        <ul class='list-unstyled navbar__list'>
+            <li class='active has-sub'>
+                <a href='{$url}?page=dashboard&token={$url_token}'>
+                    <i class='fas fa-tachometer-alt'></i>Dashboard</a>
+            </li>
+            <li>
+                <a href='{$url}?page=send-message&token={$url_token}'>
+                    <i class='fas fa-calendar-alt'></i>New Message</a>
+            </li>
+            <li>
+                <a href='{$url}?page=address-book&token={$url_token}'>
+                    <i class='fas fa-book'></i>Address Book</a>
+            </li>
+            <li>
+                <a href='{$url}?page=drafts&token={$url_token}'>
+                    <i class='fas fa-file-text'></i>Drafts</a>
+            </li>
+            <li>
+                <a href='{$url}?page=sent-item&token={$url_token}'>
+                    <i class='fas fa-envelope'></i>Sent Item</a>
+            </li>
+            <li>
+                <a href='{$url}?page=delete-item&token={$url_token}'>
+                    <i class='fas fa-trash'></i>Delete Item</a>
+            </li>
+        </ul>
+    ";
+}

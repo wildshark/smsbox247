@@ -1,0 +1,247 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Andrew Quaye
+ * Date: 01/08/2018
+ * Time: 11:49 PM
+ */
+
+function logout(){
+    session_unset();
+    session_destroy();
+
+    header("location: index.php");
+}
+
+function n_notifications($conn){
+
+    $id = $_SESSION['token'];
+    $date = date("Y-m-d");
+    $sql ="SELECT Count(notificationsID) AS total FROM get_notifications WHERE userID='".$id."' AND ddate = '".$date."'";
+    $result = $conn->query($sql);
+    $record = $result->fetch_assoc();
+
+    if (isset($record["total"])){
+        $total = $record["total"];
+    }else{
+        $total = "0.00";
+    }
+
+    return $total;
+
+}
+
+function send_message($conn){
+
+    $id = $_SESSION['token'];
+    $time = date("Y-m-d H:i:s");
+    $date = date("Y-m-d");
+    $mobile = $_POST['mobile'];
+    $message = $_POST['message'];
+
+    $price = $_SESSION['sms-price'];
+
+    $data_note = $mobile." Message sent successful";
+    $detail = "SMS to ".$mobile." @".$price;
+    $sql = "INSERT INTO `message` (`userID`,`tran_due`, `s_date`, `sms_to`, `sms_msg`) VALUES ('$id','$time', '$date', '$mobile', '$message')";
+    $result = $conn->query($sql);
+
+    if($result === TRUE){
+
+        $billing = "INSERT INTO `account` (`userID`, `tranDate`, `details`, `ref`, `spend`) VALUES ('$id', '$time', '$detail', '0', '$price')";
+        $result = $conn->query($billing);
+
+        $notification = "INSERT INTO `notifications` (`userID`,`note_date`, `notifications`,`typeID`) VALUES ('$id','$date', '$data_note','4')";
+        $result = $conn->query($notification);
+
+        header("location: {$_SESSION['page-url']}?page=sent-item&token={$_SESSION['token']}");
+    }else{
+        header("location: {$_SESSION['page-url']}?page=dashboard&token={$_SESSION['token']}");
+    }
+}
+
+function add_profile_record($conn){
+
+
+}
+
+function add_contact($conn){
+
+
+    $id = $_SESSION['token'];
+    $date = date("Y-m-d H:i:s");
+    $name = $_POST['full-name'];
+    $email = $_POST['email'];
+    $mobile = $_POST['mobile'];
+
+    $data_note =$mobile." added to address book";
+
+    $sql ="INSERT INTO `address` (`userID`, `name`, `email`, `mobile1`) VALUES ('$id','$name', '$email', '$mobile')";
+    $result = $conn->query($sql);
+
+    if($result === TRUE){
+
+        $notification = "INSERT INTO `notifications` (`userID`,`note_date`, `notifications`,`typeID`) VALUES ('$id','$date', '$data_note','5')";
+        $result = $conn->query($notification);
+
+        header("location: {$_SESSION['page-url']}?page=address-book&token={$_SESSION['token']}");
+    }else{
+        header("location: {$_SESSION['page-url']}?page=dashboard&token={$_SESSION['token']}");
+    }
+}
+
+function edit_contact($conn){
+
+    $userID =  $_SESSION['token'];
+    $id = $_SESSION['address-id'];
+    $name = $_REQUEST['full-name'];
+    $email = $_REQUEST['email'];
+    $mobile = $_REQUEST['mobile'];
+
+    $sql ="UPDATE `address` SET `userID` ='$userID', `name`='$name', `email`='$email', `mobile1`='$mobile' WHERE (`addressID`='$id')";
+    $result = $conn->query($sql);
+
+    if($result === TRUE){
+        header("location: {$_SESSION['page-url']}?page=address-book&token={$_SESSION['token']}");
+    }else{
+        header("location: {$_SESSION['page-url']}?page=dashboard&token={$_SESSION['token']}");
+    }
+}
+
+function add_draft_message($conn){
+
+    $userID =  $_SESSION['token'];
+    $time = date("Y-m-d H:i:s");
+    $date = date("Y-m-d");
+    $mobile = $_POST['mobile'];
+    $message = $_POST['message'];
+
+    $sql = "INSERT INTO `message` (`userID`,`tran_due`, `s_date`, `sms_to`, `sms_msg`) VALUES ('$userID','$time', '$date', '$mobile', '$message')";
+    $result = $conn->query($sql);
+
+    if($result === TRUE){
+        header("location: {$_SESSION['page-url']}?page=drafts&token={$_SESSION['token']}");
+    }else{
+        header("location: {$_SESSION['page-url']}?page=dashboard&token={$_SESSION['token']}");
+    }
+
+}
+
+function delete_contact($conn){
+
+    $id = $_REQUEST['id'];
+    $sql="DELETE FROM `address` WHERE (`addressID`='$id')";
+    $result = $conn->query($sql);
+
+    if($result == TRUE){
+        header("location: {$_SESSION['page-url']}?page=address-book&token={$_SESSION['token']}");
+    }else{
+        header("location: {$_SESSION['page-url']}?page=dashboard&token={$_SESSION['token']}");
+    }
+}
+
+function send_to_bin($conn){
+
+    $userID = $_SESSION['token'];
+    $id = $_REQUEST['id'];
+    $date = date("Y-m-d H:i:s");
+    $mobile = $_REQUEST['m'];
+    $sql="UPDATE `message` SET `statusID`='2' WHERE (`smsID`='$id')";
+    $result = $conn->query($sql);
+
+    $data_note = $mobile." message sent to tash";
+
+    if($result == TRUE){
+
+        $notification = "INSERT INTO `notifications` (`userID`,`note_date`, `notifications`,`typeID`) VALUES ('$userID','$date', '$data_note','3')";
+        $result = $conn->query($notification);
+
+        header("location: {$_SESSION['page-url']}?page=sent-item&token={$_SESSION['token']}");
+    }else{
+        header("location: {$_SESSION['page-url']}?page=dashboard&token={$_SESSION['token']}");
+    }
+}
+
+function restore_msg($conn){
+
+    $id = $_REQUEST['id'];
+    $sql = "UPDATE `message` SET `statusID`='1' WHERE (`smsID`='$id')";
+    $result = $conn->query($sql);
+
+    if ($result == TRUE) {
+        header("location: {$_SESSION['page-url']}?page=sent-item&token={$_SESSION['token']}");
+    } else {
+        header("location: {$_SESSION['page-url']}?page=dashboard&token={$_SESSION['token']}");
+    }
+}
+
+function delete_record($conn){
+
+    $userID = $_SESSION['token'];
+    $id = $_REQUEST['id'];
+    $mobile = $_REQUEST['m'];
+    $date = date("Y-m-d H:i:s");
+
+    $data_note ="Message to ".$mobile." deleted";
+
+    $sql="DELETE FROM `message` WHERE (`smsID`='$id')";
+    $result = $conn->query($sql);
+
+    if($result == TRUE){
+
+        $notification = "INSERT INTO `notifications` (`userID`,`note_date`, `notifications`,`typeID`) VALUES ('$userID','$date', '$data_note','3')";
+        $result = $conn->query($notification);
+
+        header("location: {$_SESSION['page-url']}?page=address-book&token={$_SESSION['token']}");
+    }else{
+        header("location: {$_SESSION['page-url']}?page=dashboard&token={$_SESSION['token']}");
+    }
+}
+
+function delete_task($conn){
+
+    //$userID = $_SESSION['token'];
+     $id = $_REQUEST['id'];
+
+    $sql="DELETE FROM `notifications` WHERE (`notificationsID`='$id')";
+    $result = $conn->query($sql);
+
+    if($result == TRUE){
+        header("location: {$_SESSION['page-url']}?page=all-notification&token={$_SESSION['token']}");
+    }
+
+}
+
+function payment($conn){
+
+    if ($_REQUEST['cc-payment'] > 0 && is_numeric($_REQUEST['cc-number'])){
+
+        $id = $_SESSION['token'];
+        $date = date("Y-m-d H:i:s");
+        $amount = $_REQUEST['cc-payment'];
+        $name = $_REQUEST['cc-name'];
+        $mobile = $_REQUEST['cc-number'];
+        $reference = $_REQUEST['x_card_code'];
+
+        $data = $_REQUEST['cc-name']."-". $_REQUEST['cc-number']."ref:".$_REQUEST['x_card_code'];
+
+        $data_note = "Paid ". $amount.", ref:". $reference ." for sms.";
+
+        $sql = "INSERT INTO `account` (`userID`,`tranDate`, `details`,`ref`, `paid`, `spend`) VALUES ('$id','$date', '$data','$reference', '$amount', '0')";
+        $result = $conn->query($sql);
+
+        if ($result === TRUE){
+
+            $notification = "INSERT INTO `notifications` (`userID`,`note_date`, `notifications`,`typeID`) VALUES ('$id','$date', '$data_note','1')";
+            $result = $conn->query($notification);
+
+            header("location: {$_SESSION['page-url']}?page=billing&token={$_SESSION['token']}");
+        }else{
+            header("location: {$_SESSION['page-url']}?page=dashboard&token={$_SESSION['token']}");
+        }
+    }else{
+        header("location: {$_SESSION['page-url']}?page=billing&token={$_SESSION['token']}");
+    }
+
+
+}

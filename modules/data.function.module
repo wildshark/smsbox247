@@ -1,0 +1,258 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Andrew Quaye
+ * Date: 03/08/2018
+ * Time: 8:25 PM
+ */
+
+function account($conn){
+    $id =  $_SESSION['token'];
+    $sql = "SELECT * FROM get_account where userID ='".$id."'LIMIT 7";
+    $result = $conn->query($sql);
+    while ($record = $result->fetch_assoc()){
+        echo"
+            <tr>
+                <td>{$record['tranDate']}</td>
+                <td>{$record['balance']}</td>
+            </tr>
+        ";
+    }
+}
+
+function notification($conn){
+
+    $userID =  $_SESSION['token'];
+    $date = date("Y-m-d");
+    $sql = "SELECT * FROM get_notifications where userID='".$userID."' AND ddate = '".$date."'Limit 3";
+    $result = $conn->query($sql);
+    while ($row = $result->fetch_assoc()){
+        echo"
+            <div class='notifi__item'>
+                <div class='bg-c1 img-cir img-40'>
+                    <i class='fa {$row['icon']}'></i>
+                </div>
+                <div class='content'>
+                    <p>{$row['notifications']}</p>
+                    <span class='date'>{$row['note_date']}</span>
+                </div>
+            </div>
+        ";
+    }
+}
+
+function balance($conn){
+
+    $userID = $_SESSION['token'];
+    $sql = "SELECT * FROM get_balance where userID='$userID'";
+    $result = $conn->query($sql);
+    $record = $result->fetch_assoc();
+
+    if(isset($record['bal'])){
+        $total = $record['bal'];
+    }else{
+        $total = "0.00";
+    }
+
+    return $total;
+
+}
+
+function total_sms_send($conn){
+
+    $userID = $_SESSION['token'];
+    $sql = "SELECT * FROM get_spend where userID='$userID'";
+    $result = $conn->query($sql);
+    $record = $result->fetch_assoc();
+
+    if(isset($record['total_sms'])){
+        $total = $record['total_sms'];
+    }else{
+        $total = "0";
+    }
+
+    return $total;
+}
+
+function address_book($conn){
+    $id = $_SESSION['token'];
+    $sql = "SELECT * FROM get_address where userID ='$id'";
+    $result = $conn->query($sql);
+    while ($record = $result->fetch_assoc()){
+
+        $data = "full-name=". $record['name'].
+                "&email=".$record['email'].
+                "&mobile=".$record['mobile1'];
+        echo"
+                <tr>
+                    <td>{$record['name']}</td>
+                    <td>{$record['email']}</td>
+                    <td class='text-right'>{$record['mobile1']}</td>
+                    <td>
+                        <div class='table-data-feature'>
+                            <a href='{$_SESSION['page-url']}?page=edit.contact&token={$_SESSION['token']}&id={$record['addressID']}{$data}' class='item' data-toggle='tooltip' data-placement='top' title='Edit'>
+                                <i class='zmdi zmdi-edit'></i>
+                            </a>
+                            <a href='{$_SESSION['page-url']}?page=send-message&token={$_SESSION['token']}&{$data}' class='item' data-toggle='tooltip' data-placement='top' title='Send Message'>
+                                <i class='zmdi zmdi-mail-send'></i>
+                            </a>
+                            <a href='{$_SESSION['page-url']}?page=model&token={$_SESSION['token']}&submit=del.contact&id={$record['addressID']}' class='item' data-toggle='tooltip' data-placement='top' title='Delete'>
+                                <i class='zmdi zmdi-delete'></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+        ";
+    }
+}
+
+function inbox_message($conn){
+    $userID = $_SESSION['token'];
+    $sql = "SELECT * FROM get_message where userID='$userID'";
+    $result = $conn->query($sql);
+    while ($record = $result->fetch_assoc()){
+
+        echo"
+                <tr>
+                    <td>{$record['tran_due']}</td>
+                    <td>{$record['sms_to']}</td>
+                    <td class='text-right'>{$record['sms_msg']}</td>
+                    <td class='text-right'>{$record['statusID']}</td>
+                    <td>
+                        <div class='table-data-feature'>
+                            <button class='item' data-toggle='tooltip' data-placement='top' title='Reply'>
+                                <i class='zmdi zmdi-mail-send'></i>
+                            </button>
+                            <button class='item' data-toggle='tooltip' data-placement='top' title='Edit'>
+                                <i class='zmdi zmdi-edit'></i>
+                            </button>
+                            <button class='item' data-toggle='tooltip' data-placement='top' title='Delete'>
+                                <i class='zmdi zmdi-delete'></i>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+        ";
+    }
+
+}
+
+function drafts_message($conn){
+    $userID = $_SESSION['token'];
+    $sql = "SELECT * FROM get_message where userID='$userID'";
+    $result = $conn->query($sql);
+    while ($record = $result->fetch_assoc()){
+
+        echo"
+                <tr>
+                    <td>{$record['tran_due']}</td>
+                    <td>{$record['sms_to']}</td>
+                    <td>{$record['sms_msg']}</td>
+                    <td>
+                        <div class='table-data-feature'>
+                            <a href='{$_SESSION['page-url']}?page=send-message&token={$_SESSION['token']}&mobile={$record['sms_to']}&id={$record['smsID']}' class='item' data-toggle='tooltip' data-placement='top' title='Send'>
+                                <i class='zmdi zmdi-mail-send'></i>
+                            </a>
+                            <a href='{$_SESSION['page-url']}?page=view-message&token={$_SESSION['token']}&id={$record['smsID']}' class='item' data-toggle='tooltip' data-placement='top' title='Edit'>
+                                <i class='zmdi zmdi-edit'></i>
+                            </a> 
+                            <a href='{$_SESSION['page-url']}?page=model&submit=status&u=2&token={$_SESSION['token']}&id={$record['smsID']}' class='item' data-toggle='tooltip' data-placement='top' title='Delete'>
+                                <i class='zmdi zmdi-delete'></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+        ";
+    }
+
+}
+
+function sent_message($conn){
+
+    $userID = $_SESSION['token'];
+
+    $sql = "SELECT * FROM get_message where userID='$userID'";
+    $result = $conn->query($sql);
+    while ($record = $result->fetch_assoc()){
+
+        echo"
+                <tr>
+                    <td>{$record['tran_due']}</td>
+                    <td>{$record['sms_to']}</td>                 
+                    <td class='text-right'>{$record['statusID']}</td>
+                    <td>
+                        <div class='table-data-feature'>
+                            <a href='{$_SESSION['page-url']}?page=resend-message&token={$_SESSION['token']}&id={$record['smsID']}' class='item' data-toggle='tooltip' data-placement='top' title='Resend'>
+                                <i class='zmdi zmdi-mail-send'></i>
+                            </a>
+                            <a href='{$_SESSION['page-url']}?page=view-message&token={$_SESSION['token']}&id={$record['smsID']}' class='item' data-toggle='tooltip' data-placement='top' title='Edit'>
+                                <i class='zmdi zmdi-edit'></i>
+                            </a> 
+                            <a href='{$_SESSION['page-url']}?page=model&submit=status&u=2&token={$_SESSION['token']}&id={$record['smsID']}&m={$record['sms_to']}' class='item' data-toggle='tooltip' data-placement='top' title='Delete'>
+                                <i class='zmdi zmdi-delete'></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+        ";
+    }
+
+}
+
+function delete_message($conn){
+    $userID = $_SESSION['token'];
+
+    $sql = "SELECT * FROM get_delete where userID='$userID'";
+    $result = $conn->query($sql);
+    while ($record = $result->fetch_assoc()){
+        $id = $record['smsID'];
+        echo"
+                <tr>
+                    <td>{$record['tran_due']}</td>
+                    <td>{$record['sms_to']}</td>
+                    <td class='text-right'>{$record['sms_msg']}</td>
+                    <td class='text-right'>{$record['statusID']}</td>
+                    <td>
+                        <div class='table-data-feature'>
+                            <a href='{$_SESSION['page-url']}?page=model&submit=status&u=1&token={$_SESSION['token']}&id={$record['smsID']}' class='item' data-toggle='tooltip' data-placement='top' title='Restore'>
+                                <i class='fa fa-reply'></i>
+                            </a>
+                            <a href='{$_SESSION['page-url']}?page=model&token={$_SESSION['token']}&submit=delete&id={$id}&m={$record['sms_to']}' class='item' data-toggle='tooltip' data-placement='top' title='Delete'>
+                                <i class='zmdi zmdi-delete'></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+        ";
+    }
+
+}
+
+function all_notification($conn){
+
+    $userID = $_SESSION['token'];
+
+    $date = date('Y-m-d');
+    $sql = "SELECT * FROM get_notifications WHERE userID='$userID' AND ddate = '".$date."'";
+    $result = $conn->query($sql);
+    while ($record = $result->fetch_assoc()){
+        $id = $record['notificationsID'];
+        echo"
+                <tr>
+                    <td>{$record['ddate']}</td>
+                    <td>{$record['ttime']}</td>
+                    <td>{$record['notifications']}</td>
+                    <td></td>
+                    <td>
+                        <div class='table-data-feature'>
+                            <a href='{$_SESSION['page-url']}?page=model&token={$_SESSION['token']}&submit=delete-task&id={$id}' class='item' data-toggle='tooltip' data-placement='top' title='Delete'>
+                                <i class='zmdi zmdi-delete'></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+        ";
+    }
+}
+
+
