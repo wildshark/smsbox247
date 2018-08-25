@@ -5,57 +5,67 @@
  * Date: 03/08/2018
  * Time: 11:26 AM
  */
-//echo $token = $_SESSION['token'];
 
-$sql = "select * from get_user_account where api_key ='$token'";
-$result = $conn->query($sql);
-$user = $result->fetch_assoc();
+if (isset($_SESSION['token'])){
 
-$userID = $user['userID'];
-$_SESSION['user-id'] = $userID;
-$id = md5($userID);
+    $token = $_SESSION['token'];
+    $id = $_SESSION['sms-user-id'];
 
-if(is_null($user['date_created'])){
-    $date = "No Date";
+    $sql = "select * from get_user_account where userID ='$id'";
+    $result = $conn->query($sql);
+    $user = $result->fetch_assoc();
+
+    $userID = $user['userID'];
+    $_SESSION['user-id'] = $userID;
+    $id = md5($userID);
+
+    if(!is_null($user['date_created'])){
+        $date = "No Date";
+    }else{
+        $date = $user['date_created'];
+    }
+
+    if(!is_null($user['full_name'])){
+        $name = "No Name";
+    }else{
+        $name = $user['full_name'];
+    }
+
+    if (!is_null($user['username'])){
+        $username = $user['username'];
+    }else{
+        $username = "No Username";
+    }
+
+    if(!is_null($user['mobile'])){
+        $mobile = $user['mobile'];
+    }else{
+        $mobile = "No Mobile";
+    }
+
+    if(!is_null($user['passwd'])){
+        $password = $user['passwd'];
+    }else{
+        $password = "";
+    }
+
+    if (!is_null($user['email'])){
+        $email = $user['email'];
+    }else{
+        $email ="No Mail";
+    }
+
+    if(!is_null($user['api_key'])){
+        $api = $user['api_key'];
+    }else{
+        $api = "";
+    }
 }else{
-    $date = $user['date_created'];
+
+    header("location: index.php");
+
 }
 
-if(is_null($user['full_name'])){
-    $name = "No Name";
-}else{
-    $name = $user['full_name'];
-}
-
-if (is_null($user['username'])){
-    $username = $user['username'];
-}else{
-    $username = "No Username";
-}
-
-if(is_null($user['mobile'])){
-    $mobile = $user['mobile'];
-}else{
-    $mobile = "No Mobile";
-}
-
-if(is_null($user['passwd'])){
-    $password = $user['passwd'];
-}else{
-    $password = "";
-}
-
-if (is_null($user['email'])){
-    $email = $user['email'];
-}else{
-    $email ="No Mail";
-}
-
-if(is_null($user['api_key'])){
-    $api = $user['api_key'];
-}else{
-    $api = "";
-}
 
 
 

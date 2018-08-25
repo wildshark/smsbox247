@@ -1,0 +1,64 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Andrew Quaye
+ * Date: 12/08/2018
+ * Time: 1:08 PM
+ */
+
+function list_user_account($conn){
+
+    $sql = "SELECT * FROM get_user_account";
+    $result = $conn->query($sql);
+    while ($record = $result->fetch_assoc()){
+        echo"
+                <tr>
+                    <td>{$record['username']}</td>
+                    <td>{$record['mobile']}</td>
+                    <td>{$record['email']}</td>
+                    <td></td>
+                    <td>
+                        <div class='table-data-feature'>
+                            <a href='{$_SESSION['page-url']}?page=edit.contact&token={$_SESSION['token']}&id={$record['userID']}' class='item' data-toggle='tooltip' data-placement='top' title='Edit'>
+                                <i class='zmdi zmdi-edit'></i>
+                            </a>
+                            <a href='{$_SESSION['page-url']}?page=send-message&token={$_SESSION['token']}' class='item' data-toggle='tooltip' data-placement='top' title='Send Message'>
+                                <i class='zmdi zmdi-mail-send'></i>
+                            </a>
+                            <a href='{$_SESSION['page-url']}?page=model&token={$_SESSION['token']}&submit=del.contact&id={$record['userID']}' class='item' data-toggle='tooltip' data-placement='top' title='Delete'>
+                                <i class='zmdi zmdi-delete'></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+        ";
+    }
+
+
+
+}
+
+?>
+
+<div class="row">
+    <div class="col-lg-12">
+        <h2 class="title-1 m-b-25"></h2>
+        <div class="table-responsive table--no-card m-b-40">
+            <table class="table table-borderless table-striped table-earning">
+                <thead>
+                <tr>
+
+                    <th>Username</th>
+                    <th>Mobile</th>
+                    <th class="text-center">email</th>
+                    <th class="text-right"></th>
+                    <th class="text-right"></th>
+                </tr>
+                </thead>
+                <tbody>
+                    <?php list_user_account($conn);?>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

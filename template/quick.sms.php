@@ -11,7 +11,7 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="mediumModalLabel">Medium Modal</h5>
+                <h5 class="modal-title" id="mediumModalLabel">Quick SMS</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -34,7 +34,7 @@
                                 <label for="email-input" class=" form-control-label">Mobile Number</label>
                             </div>
                             <div class="col-12 col-md-9">
-                                <input type="number" id="text-input" name="mobile" value="<?php echo $mobile;?>" placeholder="Enter Email" class="form-control">
+                                <input type="number" id="text-input" name="mobile" value="<?php echo $mobile;?>" placeholder="23354200001 not +23350000" class="form-control">
                                 <small class="help-block form-text">Please enter your email</small>
                             </div>
                         </div>

@@ -49,7 +49,16 @@
     <header class="header-mobile d-block d-lg-none">
         <div class="header-mobile__bar">
             <div class="container-fluid">
-                <?php echo logo();?>
+                <div class='header-mobile-inner'>
+                    <a class='logo' href='index.html'>
+                        <img src='<?php echo $template->logo;?>' alt='smsbox' />
+                    </a>
+                    <button class='hamburger hamburger--slider' type='button'>
+                <span class='hamburger-box'>
+                    <span class='hamburger-inner'></span>
+                 </span>
+                    </button>
+                </div>
             </div>
         </div>
         <nav class="navbar-mobile">
@@ -69,8 +78,13 @@
         </div>
         <div class="menu-sidebar__content js-scrollbar1">
             <nav class="navbar-sidebar">
-                <?php echo main_menu_sidebar();?>
-            </nav>
+                <?php
+                    if ($_GET['token'] === "e807f1fcf82d132f9bb018ca6738a19f"){
+                        echo admin_menu_sidebar();
+                    }else{
+                        echo main_menu_sidebar();
+                    }
+                ?>
         </div>
     </aside>
     <!-- END MENU SIDEBAR-->

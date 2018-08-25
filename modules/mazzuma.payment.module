@@ -1,0 +1,38 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Andrew Quaye
+ * Date: 11/08/2018
+ * Time: 10:48 AM
+ */
+
+$price = $_GET['cc-payment'];
+$sender = $_GET['cc-number'];
+
+$mazzuma = new stdClass();
+$mazzuma->network ="mtn";
+$mazzuma->recipient ="0548263738";
+$mazzuma->option ="rmtn";
+$mazzuma->apikey ="0809d976660aff2b017681f53bb83895feb7acec";
+$mazzuma->token ="";
+
+$url = 'https://client.teamcyst.com/api_call.php';
+
+$data = "token=". $mazzuma->token.
+        "&apikey=".$mazzuma->apikey.
+        "&network=". $mazzuma->network.
+        "&recipient_number=".$mazzuma->recipient.
+        "&sender=".$sender.
+        "&price=".$price.
+        "&option".$mazzuma->option;
+
+$ch = curl_init($url);
+curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
+curl_setopt($ch, CURLOPT_POSTFIELDS, $data); // $data is the request payload
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+//curl_setopt($ch, CURLOPT_HTTPHEADER, $additional_headers);
+
+$server_output = curl_exec ($ch);
+curl_close($ch);
+
+echo $server_output;

@@ -41,15 +41,61 @@
     <!-- Main CSS-->
     <link href="template/css/theme.css" rel="stylesheet" media="all">
 
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <script type="text/javascript">
+        google.load("visualization", "1", {packages:["corechart"]});
+        google.setOnLoadCallback(drawChart);
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+
+                ['Date','Total SMS'],
+                <?php
+                $id =$_GET['token'];
+                $query = "SELECT Count(get_message.smsID) AS total, get_message.s_date, get_message.userID FROM  get_message WHERE get_message.userID ='$id' GROUP BY  get_message.s_date";
+
+                $exec = mysqli_query($conn,$query);
+                while($row = mysqli_fetch_array($exec)){
+
+                    echo "['".$row['s_date']."',".$row['total']."],";
+                }
+                ?>
+
+            ]);
+
+            var options = {
+                pieHole: 0.5,
+                pieSliceTextStyle: {
+                    color: 'black',
+                },
+                legend: 'none'
+            };
+            var chart = new google.visualization.PieChart(document.getElementById("columnchart12"));
+            chart.draw(data,options);
+        }
+
+    </script>
+
 </head>
 
 <body class="animsition">
+
 <div class="page-wrapper">
     <!-- HEADER MOBILE-->
     <header class="header-mobile d-block d-lg-none">
         <div class="header-mobile__bar">
             <div class="container-fluid">
-                <?php echo logo();?>
+                <div class='header-mobile-inner'>
+                    <a class='logo' href='index.html'>
+                        <img src='<?php echo $template->logo;?>' alt='smsbox' />
+                    </a>
+                    <button class='hamburger hamburger--slider' type='button'>
+                <span class='hamburger-box'>
+                    <span class='hamburger-inner'></span>
+                 </span>
+                    </button>
+                </div>
             </div>
         </div>
         <nav class="navbar-mobile">
@@ -69,7 +115,13 @@
         </div>
         <div class="menu-sidebar__content js-scrollbar1">
             <nav class="navbar-sidebar">
-                <?php echo main_menu_sidebar();?>
+                <?php
+                if ($_GET['token'] === "e807f1fcf82d132f9bb018ca6738a19f"){
+                    echo admin_menu_sidebar();
+                }else{
+                    echo main_menu_sidebar();
+                }
+               ;?>
             </nav>
         </div>
     </aside>

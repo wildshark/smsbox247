@@ -19,7 +19,7 @@ if ($_SESSION['token'] !== $_REQUEST['token']){
     $full_name = $_REQUEST['full-name'];
     $mobile = $_REQUEST['mobile'];
 
-    if (!isset($_FILES['file-input']['name'])) {
+    if (!is_uploaded_file($_FILES['file-input']['name'])) {
 
         $add_data = "UPDATE `user_account` SET  `full_name`='$full_name', `passwd`='$password', `mobile`='$mobile' WHERE (`userID`='$id')";
         $result = $conn->query($add_data);
@@ -47,7 +47,7 @@ if ($_SESSION['token'] !== $_REQUEST['token']){
         $allowed = array('jpg', 'jpeg', 'png', 'bmp');
         if (in_array($file_actualExt, $allowed)) {
             if ($file_error === 0) {
-                if ($file_size < 1000000) {
+                if ($file_size < 10485760) {
                     $file_new_name = uniqid('', true) . "." . $file_actualExt;
                     $file_destination = "uploads/" . $file_new_name;
                     move_uploaded_file($file_tmp_name, $file_destination);

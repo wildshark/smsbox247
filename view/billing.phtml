@@ -27,7 +27,7 @@ if (isset($_SESSION['token'])){
                 <h3 class="text-center title-2">Pay Invoice</h3>
             </div>
             <hr>
-            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"])?>" method="post" novalidate="novalidate">
+            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"])?>" method="GET" novalidate="novalidate">
                 <input type="hidden" name="page" value="model">
                 <input type="hidden" name="token" value="<?php echo $_GET['token']?>">
                 <div class="form-group">

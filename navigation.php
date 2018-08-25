@@ -13,7 +13,6 @@ include "control/database.inc";
 include "control/template.label.inc";
 include "control/session.inc";
 
-require "modules/header.mobile.module";
 require "modules/menu.sidebar.module";
 require "modules/function.module";
 require "modules/data.function.module";
@@ -41,12 +40,23 @@ if (!isset($_SESSION['token'])){
             break;
 
             case"dashboard";
+
+            if ($_GET['token'] === ADMIN_TOKEN){
+                $template->overview = "Dashboard";
+                $template->addItem ="<button type='button' class='btn btn-secondary mb-1' data-toggle='modal' data-target='#quick-sms'>
+											Quick SMS
+										</button>";
+                $template->body = "view/admin/admin.dashboard.phtml";
+                include "template/default.php";
+            }else{
                 $template->overview = "Dashboard";
                 $template->addItem ="<button type='button' class='btn btn-secondary mb-1' data-toggle='modal' data-target='#quick-sms'>
 											Quick SMS
 										</button>";
                 $template->body = "view/dashboard.phtml";
                 include "template/default.php";
+            }
+
             break;
 
             case"address-book";
@@ -147,6 +157,32 @@ if (!isset($_SESSION['token'])){
                 $template->addItem = "";
                 $template->body = "view/notifications.phtml";
                 include "template/default.php";
+            break;
+
+            case"all-user-account";
+                $template->overview = "User Account";
+                $template->body = "view/admin/list.user.account.phtml";
+                include "template/default.php";
+            break;
+
+            case"top-up";
+                $template->overview = "Top up create";
+                $template->body = "view/admin/top.up.phtml";
+                include "template/form.php";
+            break;
+
+            case"chat-message";
+                include_once "view/chat.messager.phtml";
+            break;
+
+
+
+
+
+            case"create-sql";
+                $template->overview = "Create SQL";
+                $template->body = "view/admin/create.sql.phtml";
+                include "template/form.php";
             break;
 
 

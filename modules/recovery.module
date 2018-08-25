@@ -6,6 +6,8 @@
  * Time: 10:02 AM
  */
 
+require_once  "Mail.php";
+
 if (!isset($_POST['email'])){
     $headers("location: index.php?u=recovery");
     exit();
@@ -18,16 +20,27 @@ if (!isset($_POST['email'])){
 
     $to = $r['email'];
     $subject = "SMS BOX: User login details";
-    $txt = " Username:". $r['username']."<br> Password:". $r['passwd'];
-    $headers = "From: webmaster@example.com";
+    $username = $r['username'];
+    $password = $r['passwd'];
+    $txt = " Username:". $r['username']."\r\n Password:". $r['passwd'];
 
-    $send = mail($to,$subject,$txt,$headers);
+    $headers['From'] = "info@iquipedigita.com";
+    $header['To'] = $to;
+    $headers['Subject']="Recover Login Details";
 
-    if ($send == TRUE){
-        echo "send";
-    }else{
-        echo "error";
-    }
+    $body = " Username:".$username."\r\n Password:".$password;
+
+    $smtpinfo["host"] = "smtp.iquipedigital.com";
+    $smtpinfo["port"] = "25";
+    $smtpinfo["auth"] = true;
+    $smtpinfo["username"] = "info@iquipedigital.com";
+    $smtpinfo["password"] = "passwd8282";
+
+    // Create the mail object using the Mail::factory method
+    $mail_object =& Mail::factory("smtp", $smtpinfo);
+
+    $mail_object->send($to, $headers, $body);
+
 }
 
 

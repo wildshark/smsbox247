@@ -25,8 +25,7 @@ if (empty($username) || empty($password)){
 }else{
 
     if ($username === ADMIN_USER and $password === ADMIN_PASSWORD){
-        $token = md5("1234567890");
-        $_SESSION['token'] = $token;
+        $_SESSION['token'] = ADMIN_TOKEN;
         $_SESSION['user-name'] = $username;
         $_SESSION['email'] = ADMIN_EMAIL;
         $_SESSION['picture'] = ADMIN_PICTURE;

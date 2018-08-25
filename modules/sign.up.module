@@ -12,23 +12,41 @@ $_SESSION['page-url'] = "navigation.php";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST"){
 
+    $time = date("Y-m-d H:i:s");
     $date = date("Y-m-d");
     $username = $_POST['username'];
     $email = $_POST['email'];
     $password = $_POST['password'];
     //$mobile = $_POST['mobile'];
 
-    $api = md5(md5($username."x".$password."x".$email,true));
+    $user_check = "SELECT * FROM `get_user_account` where email='".$email."'";
+    $user_check_result = $conn->query($user_check);
+    $check = $user_check_result->fetch_assoc();
 
-    $add = "INSERT INTO `user_account` (`date_created`,`username`, `passwd`, `email`, `api_key`) VALUES ('$date','$username', '$password', '$email', '$api')";
-    $result = $conn->query($add);
+    if ($check['email'] === "$email"){
 
-    if ($result == TRUE){
-        $_SESSION['token'] = $api;
-        $_SESSION['user-name'] = $username;
-        $_SESSION['email'] = $email;
-        header("location: navigation.php?page=dashboard&token=$api");
+        echo"the email address has already been used";
+        exit();
+
     }else{
-      header("location: index.php?u=sign-up");
+
+        $api = md5(md5($username."x".$password."x".$email,true));
+
+        $add = "INSERT INTO `user_account` (`date_created`,`username`, `passwd`, `email`, `api_key`) VALUES ('$date','$username', '$password', '$email', '$api')";
+        $result = $conn->query($add);
+        $last = $conn->insert_id;
+
+        $free_sms="INSERT INTO `account` (`userID`, `tranDate`, `details`, `ref`, `paid`) VALUES ('$api', '$time', 'FREE SMS', 'FREE', '5')";
+        $result = $conn->query($free_sms);
+
+        if (isset($last)){
+            $_SESSION['sms-user-id'] = $last;
+            $_SESSION['token'] = $api;
+            $_SESSION['user-name'] = $username;
+            $_SESSION['email'] = $email;
+            header("location: navigation.php?page=dashboard&token=$api");
+        }else{
+            header("location: index.php?u=sign-up");
+        }
     }
 }

@@ -1,0 +1,41 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Andrew Quaye
+ * Date: 12/08/2018
+ * Time: 12:15 PM
+ */
+
+?>
+<hr>
+<div class="col-lg-12">
+    <div class="card">
+        <div class="card-header">
+            <strong>Basic Form</strong> Elements
+        </div>
+        <form action="" method="post" enctype="multipart/form-data">
+            <input type="hidden" name="page" value="model">
+            <div class="card-body card-block">
+                <div class="form-horizontal">
+                    <div class="row form-group">
+                        <div class="col col-md-3">
+                            <label for="textarea-input" class=" form-control-label">Message</label>
+                        </div>
+                        <div class="col-12 col-md-9">
+                            <textarea name="message"  id="textarea-input"  rows="9" placeholder="Content..." class="form-control"><?php echo $msg?></textarea>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="card-footer">
+                <button type="submit" name="submit" value="run" class="btn btn-primary btn-sm">
+                    <i class="fa fa-dot-circle-o"></i> Run
+                </button>
+                <button type="reset" class="btn btn-danger btn-sm">
+                    <i class="fa fa-ban"></i> Reset
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

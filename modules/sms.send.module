@@ -1,0 +1,84 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Andrew Quaye
+ * Date: 10/08/2018
+ * Time: 9:12 PM
+ */
+
+
+$respone = new stdClass();
+$bulksms = new stdClass();
+$request = new stdClass();
+//username from SMSAPI
+
+$bulksms->username = 'bsgh-iquipe';
+//or 'password' => md5('open-text-password'),
+$bulksms->password = 'passwd82';
+//destination number
+$request->to = $_REQUEST['mobile'];
+//sender name has to be active
+$request->from = "smsbox";
+//message content
+$request->message = $_REQUEST['message'];
+//API http
+
+$url = 'http://sms.bernsergsolutions.com:8080/bulksms/bulksms?';
+
+$c = curl_init();
+curl_setopt($c,CURLOPT_URL,$url);
+curl_setopt($c,CURLOPT_POST,true);
+curl_setopt($c,CURLOPT_POSTFIELDS, 'username='.$bulksms->username.'&password='.$bulksms->password.
+    '&type=0&dlr=1&destination='.$request->to.'&source='.$request->from.'&message='.$request->message);
+curl_setopt($c,CURLOPT_RETURNTRANSFER,true);
+$content = curl_exec($c);
+curl_close($c);
+
+$str_total = strlen($content);
+$text = 4 - $str_total;
+
+$msg = substr($content,0,$text);
+
+if ($msg == 1701){
+
+    $id = $_SESSION['token'];
+    $time = date("Y-m-d H:i:s");
+    $date = date("Y-m-d");
+    $mobile = $_REQUEST['mobile'];
+    $message = $_REQUEST['message'];
+
+    $price = $_SESSION['sms-price'];
+
+    $data_note = $mobile." Message sent successful";
+    $detail = "SMS to ".$mobile." @".$price;
+    $sql = "INSERT INTO `message` (`userID`,`tran_due`, `s_date`, `sms_to`, `sms_msg`) VALUES ('$id','$time', '$date', '$mobile', '$message')";
+    $result = $conn->query($sql);
+
+    if($result === TRUE){
+
+        $billing = "INSERT INTO `account` (`userID`, `tranDate`, `details`, `ref`, `spend`) VALUES ('$id', '$time', '$detail', '0', '$price')";
+        $result = $conn->query($billing);
+
+        $notification = "INSERT INTO `notifications` (`userID`,`note_date`, `notifications`,`typeID`) VALUES ('$id','$date', '$data_note','4')";
+        $result = $conn->query($notification);
+
+        header("location: {$_SESSION['page-url']}?page=sent-item&token={$_SESSION['token']}");
+    }else{
+        header("location: {$_SESSION['page-url']}?page=dashboard&token={$_SESSION['token']}");
+    }
+    //$respone->Status = "successful";
+    //$respone->code = "1701";
+    //$respone->to = $request->to;
+    //$respone->from = $request->from;
+
+}else{
+
+     $respone->Status = "Failed";
+    $respone->code = "1702";
+    $respone->to = $request->to;
+    $respone->from = $request->from;
+
+    header("Content-Type: application/json; charset=UTF-8");
+    $my_json_output = json_encode($respone);
+    echo $my_json_output;
+}

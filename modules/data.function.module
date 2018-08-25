@@ -5,16 +5,59 @@
  * Date: 03/08/2018
  * Time: 8:25 PM
  */
+function admin_total_users($conn){
+
+    $sql ="SELECT Count(userID) AS total FROM get_user_account";
+    $result = $conn->query($sql);
+    $user = $result->fetch_assoc();
+
+    return $user['total'];
+
+}
+
+function admin_total_sales($conn){
+    $sql ="SELECT Sum(paid) AS total FROM account";
+    $result = $conn->query($sql);
+    $sale = $result->fetch_assoc();
+
+    return $total=$sale['total'] * CURRENCY_EXCHANGE;
+}
+
+function admin_sale($conn){
+
+    $sql = "SELECT * FROM get_account WHERE spend = 0 order by `creditID` desc LIMIT 7";
+    $result = $conn->query($sql);
+
+    while ($record = $result->fetch_assoc()){
+        $date = $record['tranDate'];
+        $ref = $record['ref'];
+        $paid = $record['paid'];
+        $amount = $paid / CURRENCY_EXCHANGE; //exchange rate
+        $amount =  number_format($amount, 2);
+        echo"
+            <tr>
+                <td>{$date} - {$ref}</td>
+                <td>{$amount}</td>
+            </tr>
+        ";
+    }
+}
 
 function account($conn){
     $id =  $_SESSION['token'];
+
     $sql = "SELECT * FROM get_account where userID ='".$id."'LIMIT 7";
     $result = $conn->query($sql);
+
     while ($record = $result->fetch_assoc()){
+        $date = $record['tranDate'];
+        $balance = $record['balance'];
+        $amount = $balance / CURRENCY_EXCHANGE; //exchange rate
+        $amount =  number_format($amount, 2);
         echo"
             <tr>
-                <td>{$record['tranDate']}</td>
-                <td>{$record['balance']}</td>
+                <td>{$date}</td>
+                <td>{$amount}</td>
             </tr>
         ";
     }
@@ -49,7 +92,8 @@ function balance($conn){
     $record = $result->fetch_assoc();
 
     if(isset($record['bal'])){
-        $total = $record['bal'];
+        $total = $record['bal'] / CURRENCY_EXCHANGE;
+        $total = number_format($total, 2);
     }else{
         $total = "0.00";
     }

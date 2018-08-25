@@ -10,7 +10,7 @@ if (!isset($_REQUEST['submit'])){
     echo "action not define";
 }else{
      $action = $_REQUEST['submit'];
-    echo $token = $_REQUEST['token'];
+     $token = $_REQUEST['token'];
 
      if (!$_SESSION['token'] === $token){
          echo "wrong token or cant find token";
@@ -19,8 +19,9 @@ if (!isset($_REQUEST['submit'])){
          switch ($action){
 
              case "payment";
-                echo "payment";
-                payment($conn);
+                //echo "payment";
+                //payment($conn);
+                include "mazzuma.payment.module";
              break;
 
              case"add-contact";
@@ -35,7 +36,17 @@ if (!isset($_REQUEST['submit'])){
 
              case"send-message";
                 //echo"send-message";
-                 send_message($conn);
+                 //send_message($conn);
+                 $userID = $_SESSION['token'];
+                 $sql = "SELECT * FROM get_balance where userID='$userID'";
+                 $result = $conn->query($sql);
+                 $record = $result->fetch_assoc();
+
+                 if($record['bal'] > 1.00){
+                     include "sms.send.module";
+                 }else{
+                    echo "LOW FUNDS. TOP UP WALLET";
+                 }
              break;
 
              case"save-message";
@@ -62,6 +73,15 @@ if (!isset($_REQUEST['submit'])){
 
              case"delete";
                  delete_record($conn);
+             break;
+
+             case"top-up";
+                top_up_credit($conn);
+             break;
+
+             case"run";
+                //echo"submit-sql";
+                 run_sql($conn);
              break;
          }
      }
