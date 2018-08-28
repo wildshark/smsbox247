@@ -76,7 +76,6 @@ function admin_menu_sidebar(){
     ";
 }
 
-
 function main_menu_sidebar(){
 
     $url = $_SESSION['page-url'];
@@ -114,7 +113,6 @@ function main_menu_sidebar(){
         </ul>
     ";
 }
-
 
 function header_mobile_side_main_menu(){
     $url = $_SESSION['page-url'];

@@ -181,10 +181,6 @@ if (!isset($_SESSION['token'])){
                 include_once "view/chat.messager.phtml";
             break;
 
-
-
-
-
             case"create-sql";
                 $template->overview = "Create SQL";
                 $template->body = "view/admin/create.sql.phtml";

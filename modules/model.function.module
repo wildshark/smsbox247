@@ -83,7 +83,7 @@ if (!isset($_REQUEST['submit'])){
                 delete_user_account($conn);
              break;
 
-             case"register-user.account";
+             case"register";
                  create_user_account_by_admin($conn);
              break;
 

@@ -13,17 +13,16 @@ $mazzuma = new stdClass();
 $mazzuma->network ="mtn";
 $mazzuma->recipient ="0548263738";
 $mazzuma->option ="rmtn";
-$mazzuma->apikey ="0809d976660aff2b017681f53bb83895feb7acec";
+$mazzuma->apikey ="c79b9117c54c8b3b1c31d7912dbb84a57d5e2a300135689ba82df0297b40f7ca";
 $mazzuma->token ="";
 
 $url = 'https://client.teamcyst.com/api_call.php';
 
-$data = "token=". $mazzuma->token.
+$data =  "&price=".$price.
         "&apikey=".$mazzuma->apikey.
         "&network=". $mazzuma->network.
         "&recipient_number=".$mazzuma->recipient.
         "&sender=".$sender.
-        "&price=".$price.
         "&option".$mazzuma->option;
 
 $ch = curl_init($url);

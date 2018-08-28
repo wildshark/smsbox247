@@ -7,15 +7,22 @@
  */
 
 //database configuration
+define("SERVER", "localhost");
+define("DATABASE","smsbox");
+define("USERNAME", "root");
+define("PASSWORD", "");
+
+//database configuration
 //define("SERVER", "localhost");
 //define("DATABASE","iqsmsbox");
 //define("USERNAME", "iquipedigitalcom");
 //define("PASSWORD", "@passWD8282");
 
-define("SERVER", "sql7.freesqldatabase.com");
-define("DATABASE","sql7253559");
-define("USERNAME", "sql7253559");
-define("PASSWORD", "pPdcANMlbG");
+//server 3
+//define("SERVER", "sql7.freesqldatabase.com");
+//define("DATABASE","sql7253559");
+//define("USERNAME", "sql7253559");
+//define("PASSWORD", "pPdcANMlbG");
 
 //administrator account
 define("ADMIN_USER", "admin");
