@@ -25,7 +25,7 @@ function admin_menu_sidebar(){
                         <a href='{$url}?page=all-user-account&token={$url_token}'>User</a>
                         </li>
                         <li>
-                        <a href='{$url}?page=register&token={$url_token}'>Register</a>
+                        <a href='{$url}?page=register-user.account&token={$url_token}'>Register</a>
                         </li>
                         <li>
                         <a href='{$url}?page=top-up&token={$url_token}'>Top Up Credit</a>

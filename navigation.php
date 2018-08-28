@@ -171,6 +171,12 @@ if (!isset($_SESSION['token'])){
                 include "template/form.php";
             break;
 
+            case"register-user.account";
+                $template->overview = "Create User Account";
+                $template->body = "view/admin/create.user.account.phtml";
+                include "template/form.php";
+            break;
+
             case"chat-message";
                 include_once "view/chat.messager.phtml";
             break;

@@ -1,0 +1,79 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Andrew Quaye
+ * Date: 28/08/2018
+ * Time: 6:35 AM
+ */
+if (!isset($_GET["username"])){
+    $username ="";
+    $password ="";
+    $email ="";
+    $mobile ="";
+}else{
+    $username = $_GET['username'];
+    $password =$_GET['password'];
+    $email =$_GET['email'];
+    $mobile = $_GET['mobile'];
+}
+
+?>
+<hr>
+<div class="col-lg-12">
+    <div class="card">
+        <div class="card-header">
+            <strong>Basic Form</strong> Elements
+        </div>
+        <form action="" method="post" enctype="multipart/form-data">
+            <input type="hidden" name="page" value="model">
+            <div class="card-body card-block">
+                <div class="form-horizontal">
+
+                    <div class="row form-group">
+                        <div class="col col-md-3">
+                            <label for="email-input" class=" form-control-label">Username</label>
+                        </div>
+                        <div class="col-12 col-md-9">
+                            <input type="text" id="text-input" name="username" value="<?php echo $username;?>" placeholder="user" class="form-control">
+
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col col-md-3">
+                            <label for="email-input" class=" form-control-label">Email</label>
+                        </div>
+                        <div class="col-12 col-md-9">
+                            <input type="email" id="text-input" name="email" value="<?php echo $email;?>" placeholder="name@domain.com" class="form-control">
+
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col col-md-3">
+                            <label for="email-input" class=" form-control-label">Mobile Number</label>
+                        </div>
+                        <div class="col-12 col-md-9">
+                            <input type="number" id="text-input" name="mobile" value="<?php echo $mobile;?>" placeholder="233548200000" class="form-control">
+
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col col-md-3">
+                            <label for="email-input" class=" form-control-label">Password</label>
+                        </div>
+                        <div class="col-12 col-md-9">
+                            <input type="text" id="text-input" name="password" value="<?php echo $password;?>" placeholder="password" class="form-control">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                <button type="submit" name="submit" value="<?php echo $button->value;?>" class="<?php echo $button->css;?>">
+                    <i class="<?php echo $button->icon;?>"></i><?php echo $button->label;?>
+                </button>
+                <button type="reset" class="btn btn-danger btn-sm">
+                    <i class="fa fa-ban"></i> Reset
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

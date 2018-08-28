@@ -283,8 +283,59 @@ function run_sql($conn){
 
     }
 
+}
 
+function delete_user_account($conn){
 
+    $id = $_REQUEST['id'];
+
+    $sql="DELETE FROM `user_account` WHERE (`userID`='$id')";
+    $result = $conn->query($sql);
+
+    if($result == TRUE){
+        header("location: {$_SESSION['page-url']}?page=all-user-account&token={$_SESSION['token']}");
+    }
+}
+
+function create_user_account_by_admin($conn){
+
+    $time = date("Y-m-d H:i:s");
+    $date = date("Y-m-d");
+    $username = $_POST['username'];
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+    $mobile = $_POST['mobile'];
+
+    $user_check = "SELECT * FROM `get_user_account` where email='".$email."'";
+    $user_check_result = $conn->query($user_check);
+    $check = $user_check_result->fetch_assoc();
+
+    if ($check['email'] === "$email"){
+
+        echo"the email address has already been used";
+        exit();
+
+    }else{
+
+        $api = md5(md5($username."x".$password."x".$email,true));
+
+        $add = "INSERT INTO `user_account` (`date_created`,`username`, `passwd`, `email`,'mobile',`api_key`) VALUES ('$date','$username', '$password', '$email','$mobile','$api')";
+        $result = $conn->query($add);
+        $last = $conn->insert_id;
+
+        $free_sms="INSERT INTO `account` (`userID`, `tranDate`, `details`, `ref`, `paid`) VALUES ('$api', '$time', 'FREE SMS', 'FREE', '5')";
+        $result = $conn->query($free_sms);
+
+        if (isset($last)){
+            $_SESSION['sms-user-id'] = $last;
+            $_SESSION['token'] = $api;
+            $_SESSION['user-name'] = $username;
+            $_SESSION['email'] = $email;
+            header("location: navigation.php?page=dashboard&token=$api");
+        }else{
+            header("location: index.php?u=sign-up");
+        }
+    }
 
 
 }

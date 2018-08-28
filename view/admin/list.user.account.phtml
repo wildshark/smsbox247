@@ -25,7 +25,7 @@ function list_user_account($conn){
                             <a href='{$_SESSION['page-url']}?page=send-message&token={$_SESSION['token']}' class='item' data-toggle='tooltip' data-placement='top' title='Send Message'>
                                 <i class='zmdi zmdi-mail-send'></i>
                             </a>
-                            <a href='{$_SESSION['page-url']}?page=model&token={$_SESSION['token']}&submit=del.contact&id={$record['userID']}' class='item' data-toggle='tooltip' data-placement='top' title='Delete'>
+                            <a href='{$_SESSION['page-url']}?page=model&token={$_SESSION['token']}&submit=del.user-account&id={$record['userID']}' class='item' data-toggle='tooltip' data-placement='top' title='Delete'>
                                 <i class='zmdi zmdi-delete'></i>
                             </a>
                         </div>

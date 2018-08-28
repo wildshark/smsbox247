@@ -79,6 +79,14 @@ if (!isset($_REQUEST['submit'])){
                 top_up_credit($conn);
              break;
 
+             case"del.user-account";
+                delete_user_account($conn);
+             break;
+
+             case"register-user.account";
+                 create_user_account_by_admin($conn);
+             break;
+
              case"run";
                 //echo"submit-sql";
                  run_sql($conn);
