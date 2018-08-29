@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e169479-6ede-42d3-96d1-a4e079e3db25" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/view/user.account.phtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/sign.up.module" beforeDir="false" afterPath="$PROJECT_DIR$/modules/sign.up.module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/navigation.php" beforeDir="false" afterPath="$PROJECT_DIR$/navigation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/sign.up.php" beforeDir="false" afterPath="$PROJECT_DIR$/template/sign.up.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -79,11 +76,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user.account.phtml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="user.account.phtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/user.account.phtml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="334">
               <caret line="158" column="18" selection-start-line="158" selection-start-column="18" selection-end-line="158" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sign.up.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/template/sign.up.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="130">
+              <caret line="63" column="45" selection-start-line="63" selection-start-column="45" selection-end-line="63" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -170,10 +176,10 @@
         <option value="$PROJECT_DIR$/modules/model.function.module" />
         <option value="$PROJECT_DIR$/modules/function.module" />
         <option value="$PROJECT_DIR$/setup.php" />
-        <option value="$PROJECT_DIR$/template/sign.up.php" />
         <option value="$PROJECT_DIR$/modules/sign.up.module" />
         <option value="$PROJECT_DIR$/navigation.php" />
         <option value="$PROJECT_DIR$/view/user.account.phtml" />
+        <option value="$PROJECT_DIR$/template/sign.up.php" />
       </list>
     </option>
   </component>
@@ -219,17 +225,6 @@
               <item name="smsbox247" type="b2602c69:ProjectViewProjectNode" />
               <item name="smsbox247" type="462c0819:PsiDirectoryNode" />
               <item name="template" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="smsbox247" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smsbox247" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="smsbox247" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smsbox247" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -281,12 +276,12 @@
       <workItem from="1535393656910" duration="5340000" />
       <workItem from="1535475800304" duration="2074000" />
       <workItem from="1535489946870" duration="1403000" />
-      <workItem from="1535492411025" duration="2570000" />
+      <workItem from="1535492411025" duration="2730000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="198372000" />
+    <option name="totallyTimeSpent" value="198532000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -614,13 +609,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/sign.up.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="62" column="52" lean-forward="true" selection-start-line="62" selection-start-column="52" selection-end-line="62" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/view/admin/create.user.account.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1173">
@@ -702,6 +690,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="334">
           <caret line="158" column="18" selection-start-line="158" selection-start-column="18" selection-end-line="158" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/sign.up.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="63" column="45" selection-start-line="63" selection-start-column="45" selection-end-line="63" selection-end-column="45" />
         </state>
       </provider>
     </entry>
