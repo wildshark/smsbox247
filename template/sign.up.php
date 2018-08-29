@@ -62,7 +62,7 @@
                             </div>
                             <div class="form-group">
                                 <label>Email Address</label>
-                                <input class="au-input au-input--full" type="email" required name="email" placeholder="Email">
+                                <input class="au-input au-input--full" type="tel" required name="mobile" placeholder="2335000001">
                             </div>
                             <div class="form-group">
                                 <label>Password</label>
