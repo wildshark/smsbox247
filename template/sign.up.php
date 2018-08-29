@@ -66,7 +66,7 @@
                             </div>
                             <div class="form-group">
                                 <label>Password</label>
-                                <input class="au-input au-input--full" type="password" required name="password" placeholder="Password">
+                                <input class="au-input au-input--full" type="email" required name="password" placeholder="email">
                             </div>
                             <div class="login-checkbox">
                                 <label>
