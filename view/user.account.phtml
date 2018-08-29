@@ -1,0 +1,163 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Andrew Quaye
+ * Date: 03/08/2018
+ * Time: 11:26 AM
+ */
+
+if (isset($_SESSION['token'])){
+
+    $token = $_SESSION['token'];
+    $id = $_SESSION['sms-user-id'];
+
+    $sql = "select * from get_user_account where userID ='$id'";
+    $result = $conn->query($sql);
+    $user = $result->fetch_assoc();
+
+    $userID = $user['userID'];
+    $_SESSION['user-id'] = $userID;
+    $id = md5($userID);
+
+    if(!is_null($user['date_created'])){
+        $date = "";
+    }else{
+        $date = $user['date_created'];
+    }
+
+    if(!is_null($user['full_name'])){
+        $name = "";
+    }else{
+        $name = $user['full_name'];
+    }
+
+    if (!is_null($user['username'])){
+        $username = $user['username'];
+    }else{
+        $username = "";
+    }
+
+    if(!is_null($user['mobile'])){
+        $mobile = $user['mobile'];
+    }else{
+        $mobile = "";
+    }
+
+    if(!is_null($user['passwd'])){
+        $password = $user['passwd'];
+    }else{
+        $password = "";
+    }
+
+    if (!is_null($user['email'])){
+        $email = $user['email'];
+    }else{
+        $email ="No Mail";
+    }
+
+    if(!is_null($user['api_key'])){
+        $api = $user['api_key'];
+    }else{
+        $api = "";
+    }
+}else{
+
+    header("location: index.php");
+
+}
+
+
+
+
+?>
+<div class="col-lg-6">
+    <div class="card">
+        <div class="card-header">
+            <strong>Basic Form</strong> Elements
+        </div>
+        <div class="card-body card-block">
+            <form action="account.php" method="POST" enctype="multipart/form-data" class="form-horizontal">
+                <input type="hidden" name="page" value="model">
+                <input type="hidden" name="token" value="<?php echo $_GET['token'];?>">
+                <div class="row form-group">
+                    <div class="col col-md-3">
+                        <label class=" form-control-label">Username</label>
+                    </div>
+                    <div class="col-12 col-md-9">
+                        <p class="form-control-static"><?php echo $username;?></p>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col col-md-3">
+                        <label for="text-input" class=" form-control-label">Password</label>
+                    </div>
+                    <div class="col-12 col-md-9">
+                        <input type="password" id="text-input" name="password" value="<?php echo $password;?>" required class="form-control">
+                        <small class="form-text text-muted">This is a help text</small>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col col-md-3">
+                        <label for="email-input" class=" form-control-label">Email</label>
+                    </div>
+                    <div class="col-12 col-md-9">
+                        <input type="email" id="email-input" name="email" readonly value="<?php echo $email;?>" required class="form-control">
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col col-md-3">
+                        <label for="password-input" class=" form-control-label">Full Name</label>
+                    </div>
+                    <div class="col-12 col-md-9">
+                        <input type="text" id="text-input" name="full-name" value="<?php echo $name;?>" required class="form-control">
+                        <small class="help-block form-text">Eg. John Doe</small>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col col-md-3">
+                        <label for="password-input" class=" form-control-label">Mobile</label>
+                    </div>
+                    <div class="col-12 col-md-9">
+                        <input type="text" id="text-input" name="mobile" value="<?php echo $mobile;?>" required class="form-control">
+                        <small class="help-block form-text">Eg. 23352500001</small>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col col-md-3">
+                        <label for="file-input" class=" form-control-label">File input</label>
+                    </div>
+                    <div class="col-12 col-md-9">
+                        <input type="file" id="file-input" name="file-input" class="form-control-file">
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <button type="submit" name="submit" value="profile" class="btn btn-primary btn-sm">
+                        <i class="fa fa-dot-circle-o"></i> Submit
+                    </button>
+                    <button type="reset" class="btn btn-danger btn-sm">
+                        <i class="fa fa-ban"></i> Reset
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="col-lg-6">
+    <div class="card">
+        <div class="card-header">
+            <strong>Company</strong>
+            <small> Form</small>
+        </div>
+        <div class="card-body card-block">
+            <div class="form-group">
+                <label for="vat" class=" form-control-label">Key</label>
+                <input type="text" id="key" value="<?php echo $id;?>" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="street" class=" form-control-label">Token</label>
+                <input type="text" id="token" value="<?php echo $api;?>" class="form-control">
+            </div>
+        </div>
+    </div>
+</div>
+

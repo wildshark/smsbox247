@@ -45,7 +45,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
             $_SESSION['token'] = $api;
             $_SESSION['user-name'] = $username;
             $_SESSION['email'] = $email;
-            header("location: navigation.php?page=dashboard&token=$api");
+            header("location: navigation.php?page=account&token=$api");
         }else{
             header("location: index.php?u=sign-up");
         }

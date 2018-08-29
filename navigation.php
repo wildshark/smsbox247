@@ -134,9 +134,15 @@ if (!isset($_SESSION['token'])){
                 include "template/default.php";
             break;
 
-            case"account";
+            case"admin.account";
                 $template->overview = "Account";
                 $template->body = "view/admin/admin.account.phtml";
+                include "template/form.php";
+            break;
+
+            case"user.account";
+                $template->overview = "Account";
+                $template->body = "view/user.account.phtml";
                 include "template/form.php";
             break;
 
