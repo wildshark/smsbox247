@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e169479-6ede-42d3-96d1-a4e079e3db25" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/function.module" beforeDir="false" afterPath="$PROJECT_DIR$/modules/function.module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/mazzuma.payment.module" beforeDir="false" afterPath="$PROJECT_DIR$/modules/mazzuma.payment.module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/menu.sidebar.module" beforeDir="false" afterPath="$PROJECT_DIR$/modules/menu.sidebar.module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/model.function.module" beforeDir="false" afterPath="$PROJECT_DIR$/modules/model.function.module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/navigation.php" beforeDir="false" afterPath="$PROJECT_DIR$/navigation.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/setup.php" beforeDir="false" afterPath="$PROJECT_DIR$/setup.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/admin/create.user.account.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/view/admin/create.user.account.phtml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -63,32 +56,13 @@
     </expand>
     <select />
   </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-            <file leaf-file-name="function.module" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/modules/function.module">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="397">
-                    <caret line="329" column="75" selection-start-line="329" selection-start-column="75" selection-end-line="329" selection-end-column="75" />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="setup.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/setup.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+            <state relative-caret-position="374">
+              <caret line="27" column="30" lean-forward="true" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -204,8 +178,8 @@
         <option value="$PROJECT_DIR$/navigation.php" />
         <option value="$PROJECT_DIR$/view/admin/create.user.account.phtml" />
         <option value="$PROJECT_DIR$/modules/model.function.module" />
-        <option value="$PROJECT_DIR$/setup.php" />
         <option value="$PROJECT_DIR$/modules/function.module" />
+        <option value="$PROJECT_DIR$/setup.php" />
       </list>
     </option>
   </component>
@@ -297,15 +271,15 @@
       <workItem from="1535393656910" duration="5340000" />
       <workItem from="1535475800304" duration="2074000" />
       <workItem from="1535489946870" duration="1403000" />
-      <workItem from="1535492411025" duration="917000" />
+      <workItem from="1535492411025" duration="1611000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="196719000" />
+    <option name="totallyTimeSpent" value="197413000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21331316" />
@@ -707,17 +681,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/setup.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/function.module">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="397">
           <caret line="329" column="75" selection-start-line="329" selection-start-column="75" selection-end-line="329" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="27" column="30" lean-forward="true" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
         </state>
       </provider>
     </entry>
