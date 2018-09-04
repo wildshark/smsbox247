@@ -271,6 +271,8 @@ function top_up_credit($conn){
         $insert_account = "INSERT INTO `account` (`userID`, `tranDate`, `details`, `ref`, `paid`) VALUES ('$userID', '$date', '$details', '$invoice', '$payment')";
         $account = $conn->query($insert_account);
 
+
+
         if ($account == TRUE){
             header("location: {$_SESSION['page-url']}?page=top-up&token={$_SESSION['token']}");
         }else{
