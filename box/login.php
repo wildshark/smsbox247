@@ -8,7 +8,7 @@
 
 session_start();
 require "setup.php";
-require  "control/database.inc";
+require "control/database.inc";
 
 $_SESSION['page-url'] = "navigation.php";
 

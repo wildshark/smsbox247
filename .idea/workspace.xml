@@ -2,12 +2,285 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e169479-6ede-42d3-96d1-a4e079e3db25" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/topup.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/function.module" beforeDir="false" afterPath="$PROJECT_DIR$/modules/function.module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account.php" beforeDir="false" afterPath="$PROJECT_DIR$/box/account.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/database.inc" beforeDir="false" afterPath="$PROJECT_DIR$/box/control/database.inc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/session.inc" beforeDir="false" afterPath="$PROJECT_DIR$/box/control/session.inc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/setup.sql.module" beforeDir="false" afterPath="$PROJECT_DIR$/box/control/setup.sql.module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control/template.label.inc" beforeDir="false" afterPath="$PROJECT_DIR$/box/control/template.label.inc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/box/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/box/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mail.php" beforeDir="false" afterPath="$PROJECT_DIR$/box/mail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Mail.php" beforeDir="false" afterPath="$PROJECT_DIR$/box/modules/Mail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Mail/RFC822.php" beforeDir="false" afterPath="$PROJECT_DIR$/box/modules/Mail/RFC822.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Mail/mail.php" beforeDir="false" afterPath="$PROJECT_DIR$/box/modules/Mail/mail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Mail/mock.php" beforeDir="false" afterPath="$PROJECT_DIR$/box/modules/Mail/mock.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Mail/null.php" beforeDir="false" afterPath="$PROJECT_DIR$/box/modules/Mail/null.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Mail/sendmail.php" beforeDir="false" afterPath="$PROJECT_DIR$/box/modules/Mail/sendmail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Mail/smtp.php" beforeDir="false" afterPath="$PROJECT_DIR$/box/modules/Mail/smtp.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Mail/smtpmx.php" beforeDir="false" afterPath="$PROJECT_DIR$/box/modules/Mail/smtpmx.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/data.function.module" beforeDir="false" afterPath="$PROJECT_DIR$/box/modules/data.function.module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/function.module" beforeDir="false" afterPath="$PROJECT_DIR$/box/modules/function.module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/mazzuma.payment.module" beforeDir="false" afterPath="$PROJECT_DIR$/box/modules/mazzuma.payment.module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/menu.sidebar.module" beforeDir="false" afterPath="$PROJECT_DIR$/box/modules/menu.sidebar.module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/message.module" beforeDir="false" afterPath="$PROJECT_DIR$/box/modules/message.module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/model.function.module" beforeDir="false" afterPath="$PROJECT_DIR$/box/modules/model.function.module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/recovery.module" beforeDir="false" afterPath="$PROJECT_DIR$/box/modules/recovery.module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/sign.up.module" beforeDir="false" afterPath="$PROJECT_DIR$/box/modules/sign.up.module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/sms.send.module" beforeDir="false" afterPath="$PROJECT_DIR$/box/modules/sms.send.module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/navigation.php" beforeDir="false" afterPath="$PROJECT_DIR$/box/navigation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.php" beforeDir="false" afterPath="$PROJECT_DIR$/box/setup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/css/font-face.css" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/css/font-face.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/css/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/css/theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/default.php" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/default.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-100.eot" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-100.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-100.svg" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-100.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-100.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-100.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-100.woff" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-100.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-100.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-100.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-100italic.eot" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-100italic.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-100italic.svg" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-100italic.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-100italic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-100italic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-100italic.woff" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-100italic.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-100italic.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-100italic.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-200.eot" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-200.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-200.svg" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-200.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-200.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-200.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-200.woff" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-200.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-200.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-200.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-200italic.eot" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-200italic.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-200italic.svg" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-200italic.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-200italic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-200italic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-200italic.woff" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-200italic.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-200italic.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-200italic.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-300.eot" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-300.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-300.svg" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-300.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-300.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-300.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-300.woff" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-300.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-300.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-300.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-300italic.eot" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-300italic.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-300italic.svg" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-300italic.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-300italic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-300italic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-300italic.woff" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-300italic.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-300italic.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-300italic.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-500.eot" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-500.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-500.svg" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-500.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-500.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-500.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-500.woff" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-500.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-500.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-500.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-500italic.eot" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-500italic.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-500italic.svg" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-500italic.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-500italic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-500italic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-500italic.woff" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-500italic.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-500italic.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-500italic.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-600.eot" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-600.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-600.svg" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-600.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-600.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-600.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-600.woff" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-600.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-600.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-600.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-600italic.eot" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-600italic.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-600italic.svg" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-600italic.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-600italic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-600italic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-600italic.woff" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-600italic.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-600italic.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-600italic.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-700.eot" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-700.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-700.svg" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-700.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-700.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-700.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-700.woff" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-700.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-700.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-700.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-700italic.eot" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-700italic.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-700italic.svg" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-700italic.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-700italic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-700italic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-700italic.woff" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-700italic.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-700italic.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-700italic.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-800.eot" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-800.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-800.svg" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-800.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-800.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-800.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-800.woff" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-800.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-800.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-800.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-800italic.eot" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-800italic.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-800italic.svg" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-800italic.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-800italic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-800italic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-800italic.woff" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-800italic.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-800italic.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-800italic.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-900.eot" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-900.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-900.svg" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-900.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-900.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-900.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-900.woff" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-900.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-900.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-900.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-900italic.eot" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-900italic.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-900italic.svg" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-900italic.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-900italic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-900italic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-900italic.woff" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-900italic.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-900italic.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-900italic.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-italic.eot" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-italic.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-italic.svg" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-italic.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-italic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-italic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-italic.woff" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-italic.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-italic.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-italic.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-regular.eot" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-regular.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-regular.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-regular.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-regular.woff" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-regular.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/fonts/poppins/poppins-v5-latin-regular.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/fonts/poppins/poppins-v5-latin-regular.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/form.php" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/images/bg-title-01.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/images/bg-title-01.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/images/bg-title-02.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/images/bg-title-02.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/images/icon/Untitled-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/images/icon/Untitled-1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/images/icon/avatar-01.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/images/icon/avatar-01.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/images/icon/avatar-02.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/images/icon/avatar-02.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/images/icon/avatar-03.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/images/icon/avatar-03.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/images/icon/avatar-04.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/images/icon/avatar-04.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/images/icon/avatar-05.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/images/icon/avatar-05.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/images/icon/avatar-06.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/images/icon/avatar-06.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/images/icon/avatar-big-01.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/images/icon/avatar-big-01.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/images/icon/logo-blue.png" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/images/icon/logo-blue.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/images/icon/logo-mini.png" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/images/icon/logo-mini.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/images/icon/logo-white.png" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/images/icon/logo-white.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/images/icon/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/images/icon/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/images/icon/logoxxx.png" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/images/icon/logoxxx.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/images/icon/sms_logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/images/icon/sms_logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/quick.sms.php" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/quick.sms.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/recovery.php" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/recovery.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/sign.up.php" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/sign.up.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/animsition/animsition.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/animsition/animsition.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/animsition/animsition.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/animsition/animsition.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/bootstrap-4.1/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/bootstrap-4.1/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/bootstrap-4.1/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/bootstrap-4.1/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/bootstrap-4.1/popper.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/bootstrap-4.1/popper.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/bootstrap-progressbar/bootstrap-progressbar.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/bootstrap-progressbar/bootstrap-progressbar.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/chartjs/Chart.bundle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/chartjs/Chart.bundle.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/circle-progress/circle-progress.js" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/circle-progress/circle-progress.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/circle-progress/circle-progress.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/circle-progress/circle-progress.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/countdown/countdowntime.js" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/countdown/countdowntime.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/countdown/jquery.countdown.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/countdown/jquery.countdown.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/countdown/moment-timezone-with-data.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/countdown/moment-timezone-with-data.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/countdown/moment-timezone.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/countdown/moment-timezone.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/countdown/moment.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/countdown/moment.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/counter-up/jquery.counterup.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/counter-up/jquery.counterup.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/counter-up/jquery.waypoints.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/counter-up/jquery.waypoints.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/counter-up/waypoints.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/counter-up/waypoints.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/css-hamburgers/hamburgers.css" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/css-hamburgers/hamburgers.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/css-hamburgers/hamburgers.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/css-hamburgers/hamburgers.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/font-awesome-4.7/HELP-US-OUT.txt" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/font-awesome-4.7/HELP-US-OUT.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/font-awesome-4.7/css/font-awesome.css" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/font-awesome-4.7/css/font-awesome.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/font-awesome-4.7/css/font-awesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/font-awesome-4.7/css/font-awesome.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/font-awesome-4.7/fonts/FontAwesome.otf" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/font-awesome-4.7/fonts/FontAwesome.otf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/font-awesome-4.7/fonts/fontawesome-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/font-awesome-4.7/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/font-awesome-4.7/fonts/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/font-awesome-4.7/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/font-awesome-4.7/fonts/fontawesome-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/font-awesome-4.7/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/font-awesome-4.7/fonts/fontawesome-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/font-awesome-4.7/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/font-awesome-4.7/fonts/fontawesome-webfont.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/font-awesome-4.7/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/font-awesome-5/css/fontawesome-all.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/font-awesome-5/css/fontawesome-all.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/font-awesome-5/webfonts/fa-brands-400.eot" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/font-awesome-5/webfonts/fa-brands-400.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/font-awesome-5/webfonts/fa-brands-400.svg" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/font-awesome-5/webfonts/fa-brands-400.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/font-awesome-5/webfonts/fa-brands-400.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/font-awesome-5/webfonts/fa-brands-400.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/font-awesome-5/webfonts/fa-brands-400.woff" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/font-awesome-5/webfonts/fa-brands-400.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/font-awesome-5/webfonts/fa-brands-400.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/font-awesome-5/webfonts/fa-brands-400.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/font-awesome-5/webfonts/fa-regular-400.eot" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/font-awesome-5/webfonts/fa-regular-400.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/font-awesome-5/webfonts/fa-regular-400.svg" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/font-awesome-5/webfonts/fa-regular-400.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/font-awesome-5/webfonts/fa-regular-400.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/font-awesome-5/webfonts/fa-regular-400.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/font-awesome-5/webfonts/fa-regular-400.woff" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/font-awesome-5/webfonts/fa-regular-400.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/font-awesome-5/webfonts/fa-regular-400.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/font-awesome-5/webfonts/fa-regular-400.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/font-awesome-5/webfonts/fa-solid-900.eot" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/font-awesome-5/webfonts/fa-solid-900.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/font-awesome-5/webfonts/fa-solid-900.svg" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/font-awesome-5/webfonts/fa-solid-900.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/font-awesome-5/webfonts/fa-solid-900.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/font-awesome-5/webfonts/fa-solid-900.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/font-awesome-5/webfonts/fa-solid-900.woff" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/font-awesome-5/webfonts/fa-solid-900.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/font-awesome-5/webfonts/fa-solid-900.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/font-awesome-5/webfonts/fa-solid-900.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/jquery-3.2.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/jquery-3.2.1.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/jquery-ui.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/jquery-ui.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/lightbox2/dist/css/lightbox.css" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/lightbox2/dist/css/lightbox.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/lightbox2/dist/images/close.png" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/lightbox2/dist/images/close.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/lightbox2/dist/images/loading.gif" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/lightbox2/dist/images/loading.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/lightbox2/dist/images/next.png" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/lightbox2/dist/images/next.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/lightbox2/dist/images/prev.png" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/lightbox2/dist/images/prev.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/lightbox2/dist/js/lightbox-plus-jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/lightbox2/dist/js/lightbox-plus-jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/lightbox2/dist/js/lightbox-plus-jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/lightbox2/dist/js/lightbox-plus-jquery.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/lightbox2/dist/js/lightbox-plus-jquery.min.map" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/lightbox2/dist/js/lightbox-plus-jquery.min.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/lightbox2/dist/js/lightbox.js" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/lightbox2/dist/js/lightbox.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/lightbox2/dist/js/lightbox.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/lightbox2/dist/js/lightbox.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/lightbox2/dist/js/lightbox.min.map" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/lightbox2/dist/js/lightbox.min.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/lightbox2/src/css/lightbox.css" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/lightbox2/src/css/lightbox.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/lightbox2/src/images/close.png" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/lightbox2/src/images/close.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/lightbox2/src/images/loading.gif" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/lightbox2/src/images/loading.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/lightbox2/src/images/next.png" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/lightbox2/src/images/next.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/lightbox2/src/images/prev.png" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/lightbox2/src/images/prev.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/lightbox2/src/js/lightbox.js" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/lightbox2/src/js/lightbox.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/mdi-font/css/material-design-iconic-font.css" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/mdi-font/css/material-design-iconic-font.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/mdi-font/css/material-design-iconic-font.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/mdi-font/css/material-design-iconic-font.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/mdi-font/fonts/Material-Design-Iconic-Font.eot" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/mdi-font/fonts/Material-Design-Iconic-Font.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/mdi-font/fonts/Material-Design-Iconic-Font.svg" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/mdi-font/fonts/Material-Design-Iconic-Font.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/mdi-font/fonts/Material-Design-Iconic-Font.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/mdi-font/fonts/Material-Design-Iconic-Font.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/mdi-font/fonts/Material-Design-Iconic-Font.woff" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/mdi-font/fonts/Material-Design-Iconic-Font.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/mdi-font/fonts/Material-Design-Iconic-Font.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/mdi-font/fonts/Material-Design-Iconic-Font.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/perfect-scrollbar/perfect-scrollbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/perfect-scrollbar/perfect-scrollbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/perfect-scrollbar/perfect-scrollbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/perfect-scrollbar/perfect-scrollbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/perfect-scrollbar/perfect-scrollbar.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/perfect-scrollbar/perfect-scrollbar.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/progressbar/progressbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/progressbar/progressbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/progressbar/progressbar.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/progressbar/progressbar.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/select2/select2.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/select2/select2.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/select2/select2.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/select2/select2.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/slick/ajax-loader.gif" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/slick/ajax-loader.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/slick/config.rb" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/slick/config.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/slick/fonts/slick.eot" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/slick/fonts/slick.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/slick/fonts/slick.svg" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/slick/fonts/slick.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/slick/fonts/slick.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/slick/fonts/slick.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/slick/fonts/slick.woff" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/slick/fonts/slick.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/slick/slick-theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/slick/slick-theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/slick/slick-theme.less" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/slick/slick-theme.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/slick/slick-theme.scss" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/slick/slick-theme.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/slick/slick.css" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/slick/slick.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/slick/slick.js" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/slick/slick.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/slick/slick.less" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/slick/slick.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/slick/slick.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/slick/slick.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/slick/slick.scss" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/slick/slick.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/smk-accordion/accordion.css" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/smk-accordion/accordion.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/smk-accordion/accordion.js" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/smk-accordion/accordion.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/smk-accordion/accordion.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/smk-accordion/accordion.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/sweetalert/sweetalert.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/sweetalert/sweetalert.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/vector-map/jquery.vmap.brazil.js" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/vector-map/jquery.vmap.brazil.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/vector-map/jquery.vmap.europe.js" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/vector-map/jquery.vmap.europe.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/vector-map/jquery.vmap.france.js" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/vector-map/jquery.vmap.france.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/vector-map/jquery.vmap.germany.js" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/vector-map/jquery.vmap.germany.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/vector-map/jquery.vmap.js" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/vector-map/jquery.vmap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/vector-map/jquery.vmap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/vector-map/jquery.vmap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/vector-map/jquery.vmap.russia.js" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/vector-map/jquery.vmap.russia.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/vector-map/jquery.vmap.sampledata.js" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/vector-map/jquery.vmap.sampledata.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/vector-map/jquery.vmap.usa.js" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/vector-map/jquery.vmap.usa.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/vector-map/jquery.vmap.world.js" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/vector-map/jquery.vmap.world.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/vector-map/jqvmap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/vector-map/jqvmap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/wow/animate.css" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/wow/animate.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/vendor/wow/wow.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/vendor/wow/wow.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/topup.php" beforeDir="false" afterPath="$PROJECT_DIR$/box/topup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/5b6527d3ae9cb2.10267936.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/box/uploads/5b6527d3ae9cb2.10267936.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/5b6729ed000302.73562128.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/box/uploads/5b6729ed000302.73562128.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/5b672a7c14a133.79297885.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/box/uploads/5b672a7c14a133.79297885.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/5b686287491856.56994141.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/box/uploads/5b686287491856.56994141.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/5b6862b11c8cd2.70960078.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/box/uploads/5b6862b11c8cd2.70960078.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/5b68630bb6ea15.75416866.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/box/uploads/5b68630bb6ea15.75416866.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/add.contact.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/box/view/add.contact.phtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/address.book.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/box/view/address.book.phtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/admin/admin.account.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/box/view/admin/admin.account.phtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/admin/admin.dashboard.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/box/view/admin/admin.dashboard.phtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/admin/create.sql.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/box/view/admin/create.sql.phtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/admin/create.user.account.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/box/view/admin/create.user.account.phtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/admin/list.user.account.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/box/view/admin/list.user.account.phtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/admin/top.up.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/box/view/admin/top.up.phtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/billing.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/box/view/billing.phtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/dashboard.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/box/view/dashboard.phtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/delete.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/box/view/delete.phtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/drafts.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/box/view/drafts.phtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/inbox.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/box/view/inbox.phtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/message.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/box/view/message.phtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/notifications.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/box/view/notifications.phtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/sent.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/box/view/sent.phtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/setting.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/box/view/setting.phtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/user.account.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/box/view/user.account.phtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/view.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/box/view/view.phtml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,8 +336,8 @@
       <content type="file-editors">
         <state>
           <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-            <file leaf-file-name="sign.up.php" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/template/sign.up.php">
+            <file pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/box/template/sign.up.php">
                 <provider selected="true" editor-type-id="text-editor">
                   <state relative-caret-position="368">
                     <caret line="68" column="127" selection-start-line="68" selection-start-column="127" selection-end-line="68" selection-end-column="127" />
@@ -77,22 +350,60 @@
       </content>
     </window>
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1559013218">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="php" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="PHP" value="2" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="function.module" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/function.module">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/box/modules/function.module">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="269" column="63" lean-forward="true" selection-start-line="269" selection-start-column="63" selection-end-line="269" selection-end-column="63" />
+            <state relative-caret-position="4488">
+              <caret line="269" column="63" selection-start-line="269" selection-start-column="63" selection-end-line="269" selection-end-column="63" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="topup.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/topup.php">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/box/topup.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+            <state relative-caret-position="68">
+              <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/box/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/box/setup.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="27" column="30" lean-forward="true" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -193,9 +504,6 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths />
-  </component>
   <component name="PhpServers">
     <servers />
   </component>
@@ -210,6 +518,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -220,28 +529,27 @@
             <path>
               <item name="smsbox247" type="b2602c69:ProjectViewProjectNode" />
               <item name="smsbox247" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="smsbox247" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smsbox247" type="462c0819:PsiDirectoryNode" />
-              <item name="template" type="462c0819:PsiDirectoryNode" />
+              <item name="box" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="database.console.LAST_STATE" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../zaccount" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\xampp\htdocs\smsbox247\box" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -280,63 +588,66 @@
       <workItem from="1535492411025" duration="5294000" />
       <workItem from="1535536692892" duration="1238000" />
       <workItem from="1535561264595" duration="2669000" />
+      <workItem from="1536979694487" duration="593000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="205003000" />
+    <option name="totallyTimeSpent" value="205596000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2193646" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22239032" />
+      <window_info id="Favorites" order="1" side_tool="true" weight="0.32980332" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.24901961" />
+      <window_info anchor="bottom" id="Heroku" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Database Console" order="1" weight="0.47341338" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="4" weight="0.43396226" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32991454" />
-      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50075644" side_tool="true" weight="0.32933104" />
-      <window_info anchor="right" id="Database" order="5" weight="0.26172465" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32991454" />
+      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="bottom" id="Version Control" order="12" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info id="Structure" order="2" side_tool="true" weight="0.24901961" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32991454" />
-      <window_info id="Favorites" order="1" side_tool="true" weight="0.32980332" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Database Console" order="1" weight="0.47341338" />
-      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="File Transfer" order="13" sideWeight="0.49924356" visible="true" weight="0.32933104" />
       <window_info anchor="right" id="Remote Host" order="0" weight="0.3290469" />
       <window_info anchor="right" id="Commander" order="1" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="4" weight="0.43396226" />
-      <window_info anchor="right" x="605" y="350" width="444" height="168" id="Documentation" order="4" type="FLOATING" weight="0.32977098" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
-      <window_info anchor="bottom" id="File Transfer" order="13" sideWeight="0.49924356" visible="true" weight="0.32933104" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" x="605" y="350" width="444" height="168" id="Documentation" order="4" type="FLOATING" weight="0.32977098" />
+      <window_info anchor="right" id="Database" order="5" weight="0.26172465" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="bottom" id="Database Console" order="1" weight="0.47341338" />
-      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
-      <window_info anchor="right" id="Remote Host" order="0" weight="0.3290469" />
       <window_info content_ui="combo" id="Project" order="0" weight="0.19515885" />
+      <window_info id="Favorites" order="1" side_tool="true" weight="0.32980332" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.24901961" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Database Console" order="1" weight="0.47341338" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="4" weight="0.43396226" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32991454" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50075644" side_tool="true" weight="0.32933104" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32991454" />
+      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="Database Changes" order="11" />
+      <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="bottom" id="File Transfer" order="13" sideWeight="0.49924356" visible="true" weight="0.32933104" />
+      <window_info anchor="right" id="Remote Host" order="0" weight="0.3290469" />
       <window_info anchor="right" id="Commander" order="1" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32991454" />
-      <window_info anchor="bottom" id="Version Control" order="12" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Find" order="4" weight="0.43396226" />
-      <window_info anchor="right" x="605" y="350" width="444" height="168" id="Documentation" order="4" type="FLOATING" weight="0.32977098" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32991454" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50075644" side_tool="true" weight="0.32933104" />
-      <window_info anchor="bottom" id="Database Changes" order="11" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
-      <window_info anchor="bottom" id="File Transfer" order="13" sideWeight="0.49924356" visible="true" weight="0.32933104" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" x="605" y="350" width="444" height="168" id="Documentation" order="4" type="FLOATING" weight="0.32977098" />
       <window_info anchor="right" id="Database" order="5" weight="0.26172465" />
-      <window_info id="Favorites" order="1" side_tool="true" weight="0.32980332" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -349,43 +660,42 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/template/js/main.js</url>
+          <url>file://$PROJECT_DIR$/box/template/js/main.js</url>
           <line>1</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/modules/menu.sidebar.module</url>
+          <url>file://$PROJECT_DIR$/box/modules/menu.sidebar.module</url>
           <line>13</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="9" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/AppData/Local/Temp/andyquayegh.URL" />
-    <entry file="file://$PROJECT_DIR$/template/css/theme.css">
+    <entry file="file://$PROJECT_DIR$/box/template/css/theme.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="186">
           <caret line="3174" column="16" selection-start-line="3174" selection-start-column="16" selection-end-line="3174" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/control/template.label.inc">
+    <entry file="file://$PROJECT_DIR$/box/control/template.label.inc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="59">
           <caret line="15" column="53" lean-forward="true" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="53" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/notifications.phtml">
+    <entry file="file://$PROJECT_DIR$/box/view/notifications.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/message.module">
+    <entry file="file://$PROJECT_DIR$/box/modules/message.module">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="501">
           <caret line="54" column="1" lean-forward="true" selection-start-line="54" selection-start-column="1" selection-end-line="54" selection-end-column="1" />
@@ -393,7 +703,7 @@
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Temp/fz3temp-3/setup.php" />
-    <entry file="file://$PROJECT_DIR$/control/database.inc">
+    <entry file="file://$PROJECT_DIR$/box/control/database.inc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="7" selection-start-line="7" selection-end-line="7" />
@@ -408,7 +718,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/modules/header.mobile.module" />
-    <entry file="file://$PROJECT_DIR$/template/js/main.js">
+    <entry file="file://$PROJECT_DIR$/box/template/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-6885">
           <caret selection-end-line="3" selection-end-column="15" />
@@ -420,106 +730,99 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/recovery.php">
+    <entry file="file://$PROJECT_DIR$/box/template/recovery.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
           <caret line="57" column="89" selection-start-line="57" selection-start-column="38" selection-end-line="57" selection-end-column="89" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/recovery.module">
+    <entry file="file://$PROJECT_DIR$/box/modules/recovery.module">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="41" column="26" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mail.php">
+    <entry file="file://$PROJECT_DIR$/box/mail.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/quick.sms.php">
+    <entry file="file://$PROJECT_DIR$/box/template/quick.sms.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="663">
           <caret line="53" column="71" selection-start-line="53" selection-start-column="71" selection-end-line="53" selection-end-column="71" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/form.php">
+    <entry file="file://$PROJECT_DIR$/box/template/form.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="77" column="14" lean-forward="true" selection-start-line="77" selection-start-column="14" selection-end-line="77" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/default.php">
+    <entry file="file://$PROJECT_DIR$/box/template/default.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="122" column="17" lean-forward="true" selection-start-line="118" selection-start-column="16" selection-end-line="122" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/sent.phtml">
+    <entry file="file://$PROJECT_DIR$/box/view/sent.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/control/session.inc">
+    <entry file="file://$PROJECT_DIR$/box/control/session.inc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-82">
           <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/admin/create.sql.phtml">
+    <entry file="file://$PROJECT_DIR$/box/view/admin/create.sql.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="173">
           <caret line="21" column="54" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="54" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/inbox.phtml">
+    <entry file="file://$PROJECT_DIR$/box/view/inbox.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/view/chat.messager.phtml" />
-    <entry file="file://$PROJECT_DIR$/view/admin/list.user.account.phtml">
+    <entry file="file://$PROJECT_DIR$/box/view/admin/list.user.account.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="952">
           <caret line="61" selection-start-line="61" selection-end-line="61" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/admin/admin.dashboard.phtml">
+    <entry file="file://$PROJECT_DIR$/box/view/admin/admin.dashboard.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret lean-forward="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/mazzuma.payment.module">
+    <entry file="file://$PROJECT_DIR$/box/modules/mazzuma.payment.module">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="20" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/menu.sidebar.module">
+    <entry file="file://$PROJECT_DIR$/box/modules/menu.sidebar.module">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="153" lean-forward="true" selection-start-line="153" selection-end-line="153" />
@@ -531,178 +834,185 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/add.contact.phtml">
+    <entry file="file://$PROJECT_DIR$/box/view/add.contact.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-103">
           <caret line="51" column="73" selection-start-line="51" selection-start-column="22" selection-end-line="51" selection-end-column="73" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/address.book.phtml">
+    <entry file="file://$PROJECT_DIR$/box/view/address.book.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="18" column="53" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/admin/top.up.phtml">
+    <entry file="file://$PROJECT_DIR$/box/view/admin/top.up.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="398">
           <caret line="58" column="22" lean-forward="true" selection-start-line="52" selection-start-column="16" selection-end-line="58" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/drafts.phtml">
+    <entry file="file://$PROJECT_DIR$/box/view/drafts.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/message.phtml">
+    <entry file="file://$PROJECT_DIR$/box/view/message.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
           <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/data.function.module">
+    <entry file="file://$PROJECT_DIR$/box/modules/data.function.module">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-10">
           <caret line="72" selection-start-line="72" selection-end-line="72" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/setup.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="27" column="30" lean-forward="true" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/admin/create.user.account.phtml">
+    <entry file="file://$PROJECT_DIR$/box/view/admin/create.user.account.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1173">
           <caret line="69" column="67" selection-start-line="69" selection-start-column="67" selection-end-line="69" selection-end-column="67" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/delete.phtml">
+    <entry file="file://$PROJECT_DIR$/box/view/delete.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="8" selection-start-line="8" selection-end-line="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/model.function.module">
+    <entry file="file://$PROJECT_DIR$/box/modules/model.function.module">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="246">
           <caret line="86" column="52" lean-forward="true" selection-start-line="86" selection-start-column="17" selection-end-line="86" selection-end-column="52" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/billing.phtml">
+    <entry file="file://$PROJECT_DIR$/box/view/billing.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="714">
           <caret line="47" column="4" selection-start-line="47" selection-start-column="4" selection-end-line="47" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/dashboard.phtml">
+    <entry file="file://$PROJECT_DIR$/box/view/dashboard.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1734">
           <caret line="107" selection-start-line="107" selection-end-line="107" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/setting.phtml">
+    <entry file="file://$PROJECT_DIR$/box/view/setting.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
           <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/view.phtml">
+    <entry file="file://$PROJECT_DIR$/box/view/view.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/account.php">
+    <entry file="file://$PROJECT_DIR$/box/account.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="524">
           <caret line="49" column="42" selection-start-line="49" selection-start-column="42" selection-end-line="49" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/login.php">
+    <entry file="file://$PROJECT_DIR$/box/template/login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="524">
           <caret line="88" column="6" lean-forward="true" selection-start-line="88" selection-start-column="6" selection-end-line="88" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/sign.up.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="68" column="127" selection-start-line="68" selection-start-column="127" selection-end-line="68" selection-end-column="127" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/sms.send.module">
+    <entry file="file://$PROJECT_DIR$/box/modules/sms.send.module">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="20" column="26" lean-forward="true" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/login.php">
+    <entry file="file://$PROJECT_DIR$/box/login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="501">
           <caret line="51" column="40" selection-start-line="48" selection-start-column="11" selection-end-line="51" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/sign.up.module">
+    <entry file="file://$PROJECT_DIR$/box/modules/sign.up.module">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1225">
           <caret line="88" column="27" selection-start-line="88" selection-start-column="27" selection-end-line="88" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/user.account.phtml">
+    <entry file="file://$PROJECT_DIR$/box/view/user.account.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="501">
           <caret line="158" column="18" selection-start-line="158" selection-start-column="18" selection-end-line="158" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/admin/admin.account.phtml">
+    <entry file="file://$PROJECT_DIR$/box/view/admin/admin.account.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="501">
           <caret line="144" column="22" selection-end-line="175" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/navigation.php">
+    <entry file="file://$PROJECT_DIR$/box/navigation.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="501">
           <caret line="133" column="47" selection-start-line="133" selection-start-column="47" selection-end-line="133" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/function.module">
+    <entry file="file://$PROJECT_DIR$/box/modules/function.module">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="269" column="63" lean-forward="true" selection-start-line="269" selection-start-column="63" selection-end-line="269" selection-end-column="63" />
+        <state relative-caret-position="4488">
+          <caret line="269" column="63" selection-start-line="269" selection-start-column="63" selection-end-line="269" selection-end-column="63" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/topup.php">
+    <entry file="file://$PROJECT_DIR$/box/template/sign.up.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+        <state relative-caret-position="368">
+          <caret line="68" column="127" selection-start-line="68" selection-start-column="127" selection-end-line="68" selection-end-column="127" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/box/topup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/box/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/box/setup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="27" column="30" lean-forward="true" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
         </state>
       </provider>
     </entry>
