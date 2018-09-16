@@ -26,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
     if ($check['email'] === $email || $check['mobile1'] == $mobile){
 
         echo"the email address has already been used";
-        exit();
+        exit(0);
 
     }else{
 
@@ -59,7 +59,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
                     $i++;
                 }
             }
-
 
             $respone = new stdClass();
             $bulksms = new stdClass();

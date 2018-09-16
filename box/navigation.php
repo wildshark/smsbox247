@@ -184,7 +184,7 @@ if (!isset($_SESSION['token'])){
             break;
 
             case"chat-message";
-                include_once "view/chat.messager.phtml";
+                header("location: https://tawk.to/iquipe");
             break;
 
             case"create-sql";

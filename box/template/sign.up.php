@@ -65,8 +65,8 @@
                                 <input class="au-input au-input--full" type="tel" required name="mobile" placeholder="2335000001">
                             </div>
                             <div class="form-group">
-                                <label>Password</label>
-                                <input class="au-input au-input--full" type="email" required name="password" placeholder="email">
+                                <label>Email</label>
+                                <input class="au-input au-input--full" type="email" required name="email" placeholder="email">
                             </div>
                             <div class="login-checkbox">
                                 <label>
