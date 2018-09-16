@@ -6,19 +6,20 @@
  * Time: 8:27 AM
  */
 
-//database configuration
-define("SERVER", "localhost");
-define("DATABASE","smsbox");
-define("USERNAME", "root");
-define("PASSWORD", "");
 
-//database configuration
+//database configuration for localhost on a desktop
+//define("SERVER", "localhost");
+//define("DATABASE","smsbox");
+//define("USERNAME", "root");
+//define("PASSWORD", "");
+
+//database configuration for a website
 //define("SERVER", "localhost");
 //define("DATABASE","iqsmsbox");
 //define("USERNAME", "iquipedigitalcom");
 //define("PASSWORD", "@passWD8282");
 
-//server 3
+//database configuration for a database server 3
 define("SERVER", "sql7.freesqldatabase.com");
 define("DATABASE","sql7253559");
 define("USERNAME", "sql7253559");
