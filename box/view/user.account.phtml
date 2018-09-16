@@ -11,7 +11,7 @@ if (isset($_SESSION['token'])){
     $token = $_SESSION['token'];
     $id = $_SESSION['sms-user-id'];
 
-    $sql = "select * from get_user_account where userID ='$id'";
+    $sql = "select * from get_user_account where api_key ='$token'";
     $result = $conn->query($sql);
     $user = $result->fetch_assoc();
 
@@ -26,9 +26,9 @@ if (isset($_SESSION['token'])){
     }
 
     if(!is_null($user['full_name'])){
-        $name = "";
-    }else{
         $name = $user['full_name'];
+    }else{
+        $name = "";
     }
 
     if (!is_null($user['username'])){
@@ -73,7 +73,7 @@ if (isset($_SESSION['token'])){
 <div class="col-lg-6">
     <div class="card">
         <div class="card-header">
-            <strong>Basic Form</strong> Elements
+            <strong>User Account</strong>
         </div>
         <div class="card-body card-block">
             <form action="account.php" method="POST" enctype="multipart/form-data" class="form-horizontal">
@@ -145,8 +145,7 @@ if (isset($_SESSION['token'])){
 <div class="col-lg-6">
     <div class="card">
         <div class="card-header">
-            <strong>Company</strong>
-            <small> Form</small>
+            <strong>API Key</strong>
         </div>
         <div class="card-body card-block">
             <div class="form-group">

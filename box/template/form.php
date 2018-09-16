@@ -41,6 +41,7 @@
     <!-- Main CSS-->
     <link href="template/css/theme.css" rel="stylesheet" media="all">
 
+
 </head>
 
 <body class="animsition">
@@ -82,11 +83,16 @@
                     if ($_GET['token'] === "e807f1fcf82d132f9bb018ca6738a19f"){
                         echo admin_menu_sidebar();
                     }else{
-                        echo main_menu_sidebar();
+                        if (is_null($_SESSION['client-name']) || empty($_SESSION['client-name'])){
+                            echo create_account_menu_sidebar();
+                        }else{
+                            echo main_menu_sidebar();
+                        }
                     }
                 ?>
         </div>
     </aside>
+
     <!-- END MENU SIDEBAR-->
 
     <!-- PAGE CONTAINER-->
@@ -182,7 +188,24 @@
             </div>
         </div>
     </div>
+</div>
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Information</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Enter you full name and change your defualt password to active your account.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+        </div>
 
+    </div>
 </div>
 
 <!-- Jquery JS-->
@@ -208,7 +231,7 @@
 
 <!-- Main JS-->
 <script src="template/js/main.js"></script>
-
+<?php pop_account();?>
 </body>
 
 </html>

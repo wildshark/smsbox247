@@ -46,12 +46,12 @@ if ($msg == 1701){
     $date = date("Y-m-d");
     $mobile = $_REQUEST['mobile'];
     $message = $_REQUEST['message'];
-
+    $senderID = $_REQUEST['sender-id'];
     $price = $_SESSION['sms-price'];
 
     $data_note = $mobile." Message sent successful";
     $detail = "SMS to ".$mobile." @".$price;
-    $sql = "INSERT INTO `message` (`userID`,`tran_due`, `s_date`, `sms_to`, `sms_msg`) VALUES ('$id','$time', '$date', '$mobile', '$message')";
+    $sql = "INSERT INTO `message` (`userID`,`tran_due`, `s_date`, `sms_to`, `sms_msg`,`sms_sender`) VALUES ('$id','$time', '$date', '$mobile', '$message','$senderID')";
     $result = $conn->query($sql);
 
     if($result === TRUE){

@@ -13,6 +13,20 @@ function logout(){
     header("location: index.php");
 }
 
+function pop_account(){
+
+    if (is_null($_SESSION['client-name'])|| empty($_SESSION['client-name'])){
+        echo "
+        <script type=\"text/javascript\">
+            $(window).on('load',function(){
+                $('#myModal').modal('show');
+            });
+        </script>
+        ";
+    }else{
+        echo" <script type=\"text/javascript\"></script>";
+    }
+}
 function generatePassword ($length = 5){
     $gen_password = "";
     $possible = "0123456789abcdefghijklmnopqrstuvwxyz";

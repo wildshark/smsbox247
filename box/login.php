@@ -44,6 +44,7 @@ if (empty($username) || empty($password)){
             $username = $row_record['username'];
             $email = $row_record['email'];
             $picture = $row_record['photo'];
+            $client_name = $row_record['full_name'];
 
 
             $_SESSION['sms-user-id'] = $id;
@@ -51,9 +52,10 @@ if (empty($username) || empty($password)){
             $_SESSION['user-name'] = $username;
             $_SESSION['email'] = $email;
             $_SESSION['picture'] = $picture;
+            $_SESSION['client-name'] = $client_name;
 
-            if (is_null($row_record['full_name']) || is_null($row_record['mobile'])){
-                header("location: {$_SESSION['page-url']}?page=account&token={$_SESSION['token']}");
+            if (is_null($row_record['full_name'])){
+                header("location: {$_SESSION['page-url']}?page=user.account&token={$_SESSION['token']}");
             }else{
                 header("location: {$_SESSION['page-url']}?page=dashboard&token={$_SESSION['token']}");
             }

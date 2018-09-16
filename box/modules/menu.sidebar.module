@@ -108,10 +108,26 @@ function main_menu_sidebar(){
             </li>
             <li>
                 <a href='{$url}?page=chat-message&token={$url_token}'>
-                    <i class='fas fa-file-text'></i>chat</a>
+                    <i class='fas fa-file-text'></i>Help Desk</a>
             </li>
         </ul>
     ";
+}
+
+function create_account_menu_sidebar(){
+
+    $url = $_SESSION['page-url'];
+    $url_token = $_SESSION['token'];
+    return"
+        <ul class='list-unstyled navbar__list'>
+            <li>
+                <a href='{$url}?page=chat-message&token={$url_token}'>
+                    <i class='fas fa-facebook-messenger'></i>Help Desk</a>
+            </li>
+        </ul>
+        
+    ";
+
 }
 
 function header_mobile_side_main_menu(){

@@ -48,15 +48,11 @@
                         </div>
                         <div class="row form-group">
                             <div class="col col-md-3">
-                                <label for="select" class=" form-control-label">Select</label>
+                                <label for="select" class=" form-control-label">Sender ID</label>
                             </div>
                             <div class="col-12 col-md-9">
-                                <select name="select" id="select" class="form-control">
-                                    <option value="0">Please select</option>
-                                    <option value="1">Option #1</option>
-                                    <option value="2">Option #2</option>
-                                    <option value="3">Option #3</option>
-                                </select>
+                                <input type="text" id="text-input" name="sender-id" value="<?php echo $senderID;?>" placeholder="smsbox" class="form-control">
+                                <small class="help-block form-text">your nice name, company name or mobile number e,g. smsbox </small>
                             </div>
                         </div>
                     </div>

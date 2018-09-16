@@ -119,9 +119,13 @@
                 if ($_GET['token'] === "e807f1fcf82d132f9bb018ca6738a19f"){
                     echo admin_menu_sidebar();
                 }else{
-                    echo main_menu_sidebar();
+                    if (is_null($_SESSION['client-name']) || empty($_SESSION['client-name'])){
+                        echo create_account_menu_sidebar();
+                    }else{
+                        echo main_menu_sidebar();
+                    }
                 }
-               ;?>
+                ?>
             </nav>
         </div>
     </aside>
@@ -257,12 +261,13 @@
 
 <!-- Main JS-->
 <script src="template/js/main.js"></script>
-
-</body>
-
-</html>
-<!-- end document-->
+<?php pop_account();?>
 <?php
 require "template/quick.sms.php";
 
 ?>
+</body>
+
+</html>
+<!-- end document-->
+

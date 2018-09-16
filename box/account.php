@@ -31,8 +31,11 @@ if ($_SESSION['token'] !== $_REQUEST['token']){
             $notification = "INSERT INTO `notifications` (`userID`,`note_date`,`notifications`,`typeID`) VALUES ('$userID','$date', '$data_note','6')";
             $result = $conn->query($notification);
 
-            header("location: {$_SESSION['page-url']}?page=account&token={$_SESSION['token']}");
+            $_SESSION['client-name'] = $full_name;
+            header("location: {$_SESSION['page-url']}?page=user.account&token={$_SESSION['token']}");
+
         }
+
     } else {
 
         $file = $_FILES['file-input'];
@@ -64,7 +67,7 @@ if ($_SESSION['token'] !== $_REQUEST['token']){
                         $notification = "INSERT INTO `notifications` (`userID`,`note_date`,`notifications`,`typeID`) VALUES ('$userID','$date', '$data_note','6')";
                         $result = $conn->query($notification);
 
-                        header("location: {$_SESSION['page-url']}?page=account&token={$_SESSION['token']}");
+                        header("location: {$_SESSION['page-url']}?page=user.account&token={$_SESSION['token']}");
 
                     } else {
                         echo "file is to large to upload";

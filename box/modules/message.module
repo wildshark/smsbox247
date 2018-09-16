@@ -16,15 +16,19 @@ if (isset($_GET['id'])){
 
     $mobile = $record['sms_to'];
     $msg = $record['sms_msg'];
+    $senderID = $record['sms_sender'];
 
 }elseif(isset($_GET['mobile'])){
 
     $mobile = $_GET['mobile'];
     $msg = "";
+    $senderID ="";
 
 }else{
+
     $mobile="";
     $msg ="";
+    $senderID ="";
 }
 
 if (!isset($_GET['page'])){
