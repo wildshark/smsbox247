@@ -6,7 +6,6 @@
  * Time: 8:27 AM
  */
 
-
 //database configuration for localhost on a desktop
 //define("SERVER", "localhost");
 //define("DATABASE","smsbox");
@@ -20,10 +19,10 @@
 //define("PASSWORD", "@passWD8282");
 
 //database configuration for a database server 3
-define("SERVER", "sql7.freesqldatabase.com");
-define("DATABASE","sql7253559");
-define("USERNAME", "sql7253559");
-define("PASSWORD", "pPdcANMlbG");
+//define("SERVER", "sql7.freesqldatabase.com");
+//define("DATABASE","sql7253559");
+//define("USERNAME", "sql7253559");
+//define("PASSWORD", "pPdcANMlbG");
 
 //administrator account
 define("ADMIN_USER", "admin");
