@@ -12,13 +12,33 @@ $bulksms = new stdClass();
 $request = new stdClass();
 //username from SMSAPI
 
+$id = $_SESSION['token'];
+$time = date("Y-m-d H:i:s");
+$date = date("Y-m-d");
+echo $mobile = $_REQUEST['mobile'];
+$message = $_REQUEST['message'];
+
+echo str_split($mobile);
+
+//$total = substr_count($mobile,",") ;
+//echo $total = $total + 0;
+
+/**
+$price = $_SESSION['sms-price'];
+
+if (is_null($_REQUEST['sender-id']) || empty($_REQUEST['sender-id'])){
+    $senderID ="smsbox";
+}else{
+    $senderID = $_REQUEST['sender-id'];
+}
+
 $bulksms->username = 'bsgh-iquipe';
 //or 'password' => md5('open-text-password'),
 $bulksms->password = 'passwd82';
 //destination number
 $request->to = $_REQUEST['mobile'];
 //sender name has to be active
-$request->from = "smsbox";
+$request->from = $senderID;
 //message content
 $request->message = $_REQUEST['message'];
 //API http
@@ -40,14 +60,6 @@ $text = 4 - $str_total;
 $msg = substr($content,0,$text);
 
 if ($msg == 1701){
-
-    $id = $_SESSION['token'];
-    $time = date("Y-m-d H:i:s");
-    $date = date("Y-m-d");
-    $mobile = $_REQUEST['mobile'];
-    $message = $_REQUEST['message'];
-    $senderID = $_REQUEST['sender-id'];
-    $price = $_SESSION['sms-price'];
 
     $data_note = $mobile." Message sent successful";
     $detail = "SMS to ".$mobile." @".$price;
@@ -82,3 +94,4 @@ if ($msg == 1701){
     $my_json_output = json_encode($respone);
     echo $my_json_output;
 }
+**/

@@ -14,9 +14,9 @@ define("PASSWORD", "");
 
 //database configuration for a website
 //define("SERVER", "localhost");
-//define("DATABASE","iqsmsbox");
-//define("USERNAME", "iquipedigitalcom");
-//define("PASSWORD", "@passWD8282");
+//define("DATABASE","id7116770_smsbox");
+//define("USERNAME", "id7116770_smsbox");
+//define("PASSWORD", "smsbox");
 
 //database configuration for a database server 3
 //define("SERVER", "sql7.freesqldatabase.com");
