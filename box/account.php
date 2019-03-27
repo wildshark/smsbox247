@@ -7,11 +7,12 @@
  */
 
 session_start();
+
 include "setup.php";
-include "control/database.inc";
+include "control/database.php";
 
 if ($_SESSION['token'] !== $_REQUEST['token']){
-    echo "ok key";
+    echo "server error";
 }else {
     $userID = $_SESSION['token'];
     $id = $_SESSION['user-id'];
@@ -33,7 +34,6 @@ if ($_SESSION['token'] !== $_REQUEST['token']){
 
             $_SESSION['client-name'] = $full_name;
             header("location: {$_SESSION['page-url']}?page=user.account&token={$_SESSION['token']}");
-
         }
 
     } else {

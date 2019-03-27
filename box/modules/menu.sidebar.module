@@ -28,6 +28,9 @@ function admin_menu_sidebar(){
                         <a href='{$url}?page=register-user.account&token={$url_token}'>Register</a>
                         </li>
                         <li>
+                            <a href='{$url}?page=hash-crypt&token={$url_token}'>Hash</a>
+                        </li>
+                        <li>
                         <a href='{$url}?page=top-up&token={$url_token}'>Top Up Credit</a>
                         </li>
                     </ul>
@@ -72,6 +75,7 @@ function admin_menu_sidebar(){
                 <a href='{$url}?page=chat-message&token={$url_token}'>
                     <i class='fas fa-file-text'></i>chat</a>
             </li>
+           
         </ul>
     ";
 }

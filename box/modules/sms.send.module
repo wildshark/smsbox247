@@ -6,7 +6,6 @@
  * Time: 9:12 PM
  */
 
-
 $respone = new stdClass();
 $bulksms = new stdClass();
 $request = new stdClass();
@@ -15,16 +14,15 @@ $request = new stdClass();
 $id = $_SESSION['token'];
 $time = date("Y-m-d H:i:s");
 $date = date("Y-m-d");
-echo $mobile = $_REQUEST['mobile'];
+$mobile = $_REQUEST['mobile'];
 $message = $_REQUEST['message'];
 
-echo str_split($mobile);
+$get_mobile = explode(",", $mobile);
+$count_mobile_num = count($get_mobile);
 
-//$total = substr_count($mobile,",") ;
-//echo $total = $total + 0;
-
-/**
 $price = $_SESSION['sms-price'];
+
+$cost = $price * $count_mobile_num;
 
 if (is_null($_REQUEST['sender-id']) || empty($_REQUEST['sender-id'])){
     $senderID ="smsbox";
@@ -68,7 +66,7 @@ if ($msg == 1701){
 
     if($result === TRUE){
 
-        $billing = "INSERT INTO `account` (`userID`, `tranDate`, `details`, `ref`, `spend`) VALUES ('$id', '$time', '$detail', '0', '$price')";
+        $billing = "INSERT INTO `account` (`userID`, `tranDate`, `details`, `ref`, `spend`) VALUES ('$id', '$time', '$detail', '0', '$cost')";
         $result = $conn->query($billing);
 
         $notification = "INSERT INTO `notifications` (`userID`,`note_date`, `notifications`,`typeID`) VALUES ('$id','$date', '$data_note','4')";
@@ -85,13 +83,13 @@ if ($msg == 1701){
 
 }else{
 
-     $respone->Status = "Failed";
-    $respone->code = "1702";
-    $respone->to = $request->to;
-    $respone->from = $request->from;
+    header("location: {$_SESSION['page-url']}?page=failed&token={$_SESSION['token']}");
+    //$respone->Status = "Failed";
+    //$respone->code = "1702";
+    //$respone->to = $request->to;
+    //$respone->from = $request->from;
 
-    header("Content-Type: application/json; charset=UTF-8");
-    $my_json_output = json_encode($respone);
-    echo $my_json_output;
+    //header("Content-Type: application/json; charset=UTF-8");
+    //$my_json_output = json_encode($respone);
+    //echo $my_json_output;
 }
-**/

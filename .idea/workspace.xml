@@ -2,11 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e169479-6ede-42d3-96d1-a4e079e3db25" name="Default" comment="make changes at the sign up page">
+      <change afterPath="$PROJECT_DIR$/box/control/session.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/box/test.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/box/view/admin/admin.hash.phtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/box/modules/Mail.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/box/account.php" beforeDir="false" afterPath="$PROJECT_DIR$/box/account.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/box/control/database.inc" beforeDir="false" afterPath="$PROJECT_DIR$/box/control/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/box/control/session.inc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/box/control/template.label.inc" beforeDir="false" afterPath="$PROJECT_DIR$/box/control/template.label.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/box/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/box/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/box/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/box/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/box/modules/Mail/RFC822.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/box/modules/Mail/mail.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/box/modules/Mail/mock.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/box/modules/Mail/null.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/box/modules/Mail/sendmail.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/box/modules/Mail/smtp.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/box/modules/Mail/smtpmx.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/box/modules/data.function.module" beforeDir="false" afterPath="$PROJECT_DIR$/box/modules/data.function.module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/box/modules/function.module" beforeDir="false" afterPath="$PROJECT_DIR$/box/modules/function.module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/box/modules/menu.sidebar.module" beforeDir="false" afterPath="$PROJECT_DIR$/box/modules/menu.sidebar.module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/box/modules/model.function.module" beforeDir="false" afterPath="$PROJECT_DIR$/box/modules/model.function.module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/box/modules/recovery.module" beforeDir="false" afterPath="$PROJECT_DIR$/box/modules/recovery.module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/box/modules/sign.up.module" beforeDir="false" afterPath="$PROJECT_DIR$/box/modules/sign.up.module" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/box/modules/sms.send.module" beforeDir="false" afterPath="$PROJECT_DIR$/box/modules/sms.send.module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/box/navigation.php" beforeDir="false" afterPath="$PROJECT_DIR$/box/navigation.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/box/setup.php" beforeDir="false" afterPath="$PROJECT_DIR$/box/setup.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/box/view/message.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/box/view/message.phtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/box/template/default.php" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/default.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/box/template/form.php" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/box/template/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/box/template/recovery.php" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/recovery.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/box/template/sign.up.php" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/sign.up.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/box/view/admin/admin.dashboard.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/box/view/admin/admin.dashboard.phtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/box/view/billing.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/box/view/user.bill.phtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/box/view/dashboard.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/box/view/dashboard.phtml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -63,28 +94,36 @@
     <session id="-1559013218">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="8" />
+          <entry key="project.open.time.2" value="2" />
           <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.4" value="2" />
+          <entry key="project.open.time.41" value="1" />
           <entry key="project.open.time.51" value="1" />
-          <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.open.time.6" value="2" />
+          <entry key="project.open.time.72" value="1" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="bash_history" value="1" />
           <entry key="gitattributes" value="1" />
           <entry key="gitignore" value="1" />
+          <entry key="html" value="2" />
+          <entry key="inc" value="5" />
           <entry key="md" value="2" />
-          <entry key="module" value="12" />
-          <entry key="php" value="16" />
-          <entry key="phtml" value="2" />
+          <entry key="module" value="36" />
+          <entry key="php" value="63" />
+          <entry key="phtml" value="30" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="HTML" value="2" />
           <entry key="Markdown" value="2" />
-          <entry key="PHP" value="30" />
-          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="PHP" value="134" />
+          <entry key="PLAIN_TEXT" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.composer.command.options" />
@@ -92,10 +131,11 @@
       <usages-collector id="statistics.vcs.git.usages" />
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="inc" value="114" />
           <entry key="md" value="62" />
-          <entry key="module" value="521" />
-          <entry key="php" value="752" />
-          <entry key="phtml" value="209" />
+          <entry key="module" value="1912" />
+          <entry key="php" value="1140" />
+          <entry key="phtml" value="908" />
           <entry key="txt" value="42" />
         </counts>
       </usages-collector>
@@ -103,10 +143,11 @@
       <usages-collector id="statistics.php.rename.constructor" />
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="17" />
+          <entry key="HTML" value="28" />
           <entry key="Markdown" value="62" />
-          <entry key="PHP" value="1465" />
+          <entry key="PHP" value="4043" />
           <entry key="PLAIN_TEXT" value="42" />
+          <entry key="SQL" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.new.test" />
@@ -116,101 +157,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/box/modules/function.module">
+        <entry file="file://$PROJECT_DIR$/box/modules/data.function.module">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4008">
-              <caret line="15" column="22" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="22" />
-              <folding>
-                <element signature="n#top_up_credit#0;n#!!top" />
-                <element signature="n#run_sql#0;n#!!top" />
-                <element signature="n#delete_user_account#0;n#!!top" />
-                <element signature="n#create_user_account_by_admin#0;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/box/modules/sms.send.module">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+            <state relative-caret-position="42">
+              <caret line="154" column="38" selection-start-line="154" selection-start-column="9" selection-end-line="154" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/box/modules/data.function.module">
+        <entry file="file://$PROJECT_DIR$/box/view/dashboard.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1394">
-              <caret line="82" column="10" lean-forward="true" selection-start-line="82" selection-start-column="10" selection-end-line="82" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/box/modules/menu.sidebar.module">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="110" column="46" lean-forward="true" selection-start-line="110" selection-start-column="46" selection-end-line="110" selection-end-column="46" />
-              <folding>
-                <element signature="n#admin_menu_sidebar#0;n#!!top" />
-                <element signature="n#header_mobile_side_main_menu#0;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/box/setup.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/box/view/message.phtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="33" column="45" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/box/modules/message.module">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/box/template/default.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="267" column="2" selection-start-line="267" selection-start-column="2" selection-end-line="267" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/box/template/quick.sms.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="50" column="89" selection-start-line="50" selection-start-column="89" selection-end-line="50" selection-end-column="89" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/box/template/form.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="233" column="22" selection-start-line="233" selection-end-line="233" selection-end-column="22" />
+            <state relative-caret-position="238">
+              <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -232,7 +191,13 @@
       <find>sms</find>
       <find>create_user_account_by_admin($conn)</find>
       <find>top</find>
+      <find>accoun</find>
+      <find>balance</find>
+      <find>bil</find>
+      <find>account</find>
       <find>\&quot;</find>
+      <find>total</find>
+      <find>user_total_sms_send($conn)</find>
     </findStrings>
     <replaceStrings>
       <replace>href=&quot;template/vendor</replace>
@@ -251,21 +216,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/view/message.phtml" />
-        <option value="$USER_HOME$/AppData/Local/Temp/fz3temp-3/setup.php" />
-        <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/view/billing.phtml" />
-        <option value="$PROJECT_DIR$/view/admin/admin.account.phtml" />
-        <option value="$PROJECT_DIR$/account.php" />
-        <option value="$PROJECT_DIR$/modules/header.mobile.module" />
-        <option value="$PROJECT_DIR$/template/js/main.js" />
-        <option value="$PROJECT_DIR$/view/dashboard.phtml" />
-        <option value="$PROJECT_DIR$/modules/recovery.module" />
-        <option value="$PROJECT_DIR$/mail.php" />
-        <option value="$PROJECT_DIR$/template/quick.sms.php" />
-        <option value="$PROJECT_DIR$/modules/sms.send.module" />
-        <option value="$PROJECT_DIR$/template/default.php" />
-        <option value="$PROJECT_DIR$/template/form.php" />
         <option value="$PROJECT_DIR$/control/session.inc" />
         <option value="$PROJECT_DIR$/view/admin/create.sql.phtml" />
         <option value="$PROJECT_DIR$/view/admin/user.account.phtml" />
@@ -287,21 +237,36 @@
         <option value="$PROJECT_DIR$/modules/function.module" />
         <option value="$PROJECT_DIR$/topup.php" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/box/modules/message.module" />
+        <option value="$PROJECT_DIR$/box/template/quick.sms.php" />
+        <option value="$PROJECT_DIR$/box/template/login.php" />
+        <option value="$PROJECT_DIR$/box/setup.php" />
+        <option value="$PROJECT_DIR$/box/control/database.inc" />
+        <option value="$PROJECT_DIR$/box/index.php" />
+        <option value="$PROJECT_DIR$/box/control/session.inc" />
+        <option value="$PROJECT_DIR$/box/login.php" />
+        <option value="$PROJECT_DIR$/box/view/user.account.phtml" />
+        <option value="$PROJECT_DIR$/box/view/billing.phtml" />
+        <option value="$PROJECT_DIR$/box/account.php" />
+        <option value="$PROJECT_DIR$/box/view/user.bill.phtml" />
+        <option value="$PROJECT_DIR$/box/modules/recovery.module" />
+        <option value="$PROJECT_DIR$/box/template/recovery.php" />
         <option value="$PROJECT_DIR$/box/template/sign.up.php" />
         <option value="$PROJECT_DIR$/box/modules/sign.up.module" />
-        <option value="$PROJECT_DIR$/box/login.php" />
-        <option value="$PROJECT_DIR$/box/navigation.php" />
-        <option value="$PROJECT_DIR$/box/account.php" />
-        <option value="$PROJECT_DIR$/box/modules/function.module" />
-        <option value="$PROJECT_DIR$/box/template/form.php" />
-        <option value="$PROJECT_DIR$/box/view/user.account.phtml" />
-        <option value="$PROJECT_DIR$/box/modules/message.module" />
-        <option value="$PROJECT_DIR$/box/template/default.php" />
-        <option value="$PROJECT_DIR$/box/template/quick.sms.php" />
+        <option value="$PROJECT_DIR$/box/view/admin/admin.dashboard.phtml" />
+        <option value="$PROJECT_DIR$/box/control/template.label.php" />
         <option value="$PROJECT_DIR$/box/modules/menu.sidebar.module" />
+        <option value="$PROJECT_DIR$/box/template/default.php" />
+        <option value="$PROJECT_DIR$/box/template/form.php" />
+        <option value="$PROJECT_DIR$/box/modules/function.module" />
+        <option value="$PROJECT_DIR$/box/navigation.php" />
+        <option value="$PROJECT_DIR$/box/view/admin/admin.hash.phtml" />
+        <option value="$PROJECT_DIR$/box/modules/model.function.module" />
+        <option value="$PROJECT_DIR$/box/test.php" />
         <option value="$PROJECT_DIR$/box/view/message.phtml" />
-        <option value="$PROJECT_DIR$/box/setup.php" />
         <option value="$PROJECT_DIR$/box/modules/sms.send.module" />
+        <option value="$PROJECT_DIR$/box/modules/data.function.module" />
+        <option value="$PROJECT_DIR$/box/view/dashboard.phtml" />
       </list>
     </option>
   </component>
@@ -315,9 +280,9 @@
     <servers />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="43" />
-    <option name="y" value="19" />
-    <option name="width" value="1366" />
+    <option name="x" value="631" />
+    <option name="y" value="33" />
+    <option name="width" value="697" />
     <option name="height" value="735" />
   </component>
   <component name="ProjectView">
@@ -325,6 +290,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -343,17 +309,10 @@
               <item name="box" type="462c0819:PsiDirectoryNode" />
               <item name="modules" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="smsbox247" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smsbox247" type="462c0819:PsiDirectoryNode" />
-              <item name="box" type="462c0819:PsiDirectoryNode" />
-              <item name="uploads" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -410,6 +369,13 @@
       <workItem from="1536979694487" duration="1128000" />
       <workItem from="1537003508174" duration="1107000" />
       <workItem from="1537077486656" duration="15320000" />
+      <workItem from="1537405696250" duration="697000" />
+      <workItem from="1537896260469" duration="1836000" />
+      <workItem from="1538070100958" duration="12004000" />
+      <workItem from="1538159968634" duration="15656000" />
+      <workItem from="1538287219099" duration="21933000" />
+      <workItem from="1539116748421" duration="709000" />
+      <workItem from="1553640440853" duration="7445000" />
     </task>
     <task id="LOCAL-00001" summary="make changes at the sign up page">
       <created>1537081162087</created>
@@ -422,20 +388,20 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="222558000" />
+    <option name="totallyTimeSpent" value="282838000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22844176" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.5102041" />
       <window_info id="Favorites" order="1" side_tool="true" weight="0.32980332" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.24901961" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Database Console" order="1" weight="0.47341338" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="4" weight="0.43396226" />
+      <window_info anchor="bottom" id="Find" order="4" weight="0.43278688" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32991454" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50075644" side_tool="true" weight="0.32933104" />
@@ -443,8 +409,8 @@
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32991454" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
-      <window_info anchor="bottom" id="Version Control" order="12" />
-      <window_info anchor="bottom" id="File Transfer" order="13" sideWeight="0.49924356" visible="true" weight="0.32933104" />
+      <window_info anchor="bottom" id="Version Control" order="12" weight="0.3295082" />
+      <window_info anchor="bottom" id="File Transfer" order="13" sideWeight="0.49924356" visible="true" weight="0.32786885" />
       <window_info anchor="bottom" id="Heroku" order="14" weight="0.3295082" />
       <window_info anchor="right" id="Remote Host" order="0" weight="0.3290469" />
       <window_info anchor="right" id="Commander" order="1" weight="0.4" />
@@ -482,6 +448,32 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
@@ -497,104 +489,15 @@
           <line>1</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/box/modules/menu.sidebar.module</url>
-          <line>13</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/fz3temp-3/setup.php" />
-    <entry file="file://$PROJECT_DIR$/box/control/database.inc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/superglobals/_superglobals.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="173" selection-start-line="173" selection-end-line="173" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/header.mobile.module" />
-    <entry file="file://$PROJECT_DIR$/box/template/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6885">
-          <caret selection-end-line="3" selection-end-column="15" />
-          <folding>
-            <element signature="e#9678#11979#0" />
-            <element signature="e#12032#14342#0" />
-            <element signature="e#14394#15406#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/box/template/recovery.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="57" column="89" selection-start-line="57" selection-start-column="38" selection-end-line="57" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/box/modules/recovery.module">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="41" column="26" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/box/mail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/box/view/sent.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/box/control/session.inc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-82">
-          <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/box/view/admin/create.sql.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="21" column="54" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/box/view/inbox.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/view/chat.messager.phtml" />
     <entry file="file://$PROJECT_DIR$/box/view/admin/list.user.account.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="952">
           <caret line="61" selection-start-line="61" selection-end-line="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/box/view/admin/admin.dashboard.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
         </state>
       </provider>
     </entry>
@@ -612,31 +515,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/box/view/address.book.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="18" column="53" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/box/view/admin/top.up.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="398">
           <caret line="58" column="22" lean-forward="true" selection-start-line="52" selection-start-column="16" selection-end-line="58" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/box/view/drafts.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/box/view/admin/create.user.account.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1173">
-          <caret line="69" column="67" selection-start-line="69" selection-start-column="67" selection-end-line="69" selection-end-column="67" />
         </state>
       </provider>
     </entry>
@@ -647,45 +529,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/box/view/billing.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="47" column="4" selection-start-line="47" selection-start-column="4" selection-end-line="47" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/box/view/dashboard.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1734">
-          <caret line="107" selection-start-line="107" selection-end-line="107" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/box/view/setting.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/box/view/view.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/box/template/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="88" column="6" lean-forward="true" selection-start-line="88" selection-start-column="6" selection-end-line="88" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/box/view/admin/admin.account.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="144" column="22" selection-end-line="175" />
         </state>
       </provider>
     </entry>
@@ -699,24 +546,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/box/template/sign.up.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="66" column="52" lean-forward="true" selection-start-line="66" selection-start-column="52" selection-end-line="66" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/box/topup.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/box/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -726,45 +559,172 @@
     <entry file="file://$PROJECT_DIR$/.gitattributes">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/box/navigation.php">
+    <entry file="file://$PROJECT_DIR$/box/modules/Mail.php" />
+    <entry file="file://$PROJECT_DIR$/box/modules/message.module">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="144" column="60" selection-start-line="144" selection-start-column="60" selection-end-line="144" selection-end-column="60" />
+        <state relative-caret-position="221">
+          <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/box/template/quick.sms.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="50" column="89" selection-start-line="50" selection-start-column="89" selection-end-line="50" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/box/mail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="16" column="2" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/box/control/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="17" column="19" lean-forward="true" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/box/control/session.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/box/modules/recovery.module">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-12">
+          <caret line="22" column="49" lean-forward="true" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/box/modules/sign.up.module">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="204">
+          <caret line="105" column="46" selection-start-line="105" selection-start-column="46" selection-end-line="105" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/box/account.php">
+    <entry file="file://$PROJECT_DIR$/box/template/recovery.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="34" column="97" lean-forward="true" selection-start-line="34" selection-start-column="97" selection-end-line="34" selection-end-column="97" />
+        <state relative-caret-position="158">
+          <caret line="69" column="49" selection-start-line="69" selection-start-column="49" selection-end-line="69" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/box/setup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="77">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/box/view/admin/admin.account.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="174" lean-forward="true" selection-start-line="72" selection-start-column="22" selection-end-line="174" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/box/control/template.label.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="41" column="58" selection-start-line="41" selection-start-column="58" selection-end-line="41" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/box/modules/menu.sidebar.module">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="30" column="59" lean-forward="true" selection-start-line="30" selection-start-column="49" selection-end-line="30" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/box/view/admin/admin.dashboard.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="54" column="22" lean-forward="true" selection-start-line="54" selection-start-column="22" selection-end-line="54" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/box/view/admin/create.user.account.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="828">
+          <caret line="69" column="67" selection-start-line="69" selection-start-column="67" selection-end-line="69" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/box/view/address.book.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="18" column="53" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/box/view/inbox.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/box/view/setting.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/box/view/user.account.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="147" column="36" selection-start-line="147" selection-start-column="36" selection-end-line="147" selection-end-column="36" />
+        <state relative-caret-position="-1161">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/box/login.php">
+    <entry file="file://$PROJECT_DIR$/box/template/sign.up.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="54" column="12" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="36" />
+        <state relative-caret-position="204">
+          <caret line="89" column="34" lean-forward="true" selection-start-line="81" selection-start-column="28" selection-end-line="89" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/box/template/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="46" column="43" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/box/template/form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3123">
+          <caret line="42" column="4" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/box/template/default.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="262" column="22" lean-forward="true" selection-start-line="262" selection-start-column="22" selection-end-line="262" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/box/view/admin/admin.hash.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="27" column="67" selection-start-line="27" selection-start-column="67" selection-end-line="27" selection-end-column="67" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/box/modules/function.module">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4008">
-          <caret line="15" column="22" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="22" />
+        <state relative-caret-position="4658">
+          <caret line="368" column="24" selection-start-line="368" selection-start-column="9" selection-end-line="368" selection-end-column="24" />
           <folding>
             <element signature="n#top_up_credit#0;n#!!top" />
             <element signature="n#run_sql#0;n#!!top" />
@@ -774,82 +734,100 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/box/view/user.bill.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="30" column="77" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/box/view/drafts.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="19" column="48" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/box/account.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/box/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/box/modules/model.function.module">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="86" column="52" lean-forward="true" selection-start-line="86" selection-start-column="17" selection-end-line="86" selection-end-column="52" />
+        <state relative-caret-position="426">
+          <caret line="99" column="1" selection-start-line="99" selection-start-column="1" selection-end-line="99" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/box/modules/message.module">
+    <entry file="file://$PROJECT_DIR$/box/navigation.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+        <state relative-caret-position="-5">
+          <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/box/template/form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="233" column="22" selection-start-line="233" selection-end-line="233" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/box/template/default.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="267" column="2" selection-start-line="267" selection-start-column="2" selection-end-line="267" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/box/template/quick.sms.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="50" column="89" selection-start-line="50" selection-start-column="89" selection-end-line="50" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/box/modules/menu.sidebar.module">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="110" column="46" lean-forward="true" selection-start-line="110" selection-start-column="46" selection-end-line="110" selection-end-column="46" />
-          <folding>
-            <element signature="n#admin_menu_sidebar#0;n#!!top" />
-            <element signature="n#header_mobile_side_main_menu#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/box/modules/Mail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3053" />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/.bash_history">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/box/view/message.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="33" column="45" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/box/setup.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="151">
+          <caret line="33" column="75" selection-start-line="33" selection-start-column="75" selection-end-line="33" selection-end-column="75" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/box/modules/sms.send.module">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+        <state relative-caret-position="311">
+          <caret line="93" column="25" lean-forward="true" selection-start-line="93" selection-start-column="25" selection-end-line="93" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/box/test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/box/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="58" column="96" lean-forward="true" selection-start-line="58" selection-start-column="96" selection-end-line="58" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/box/view/sent.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/box/modules/data.function.module">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1394">
-          <caret line="82" column="10" lean-forward="true" selection-start-line="82" selection-start-column="10" selection-end-line="82" selection-end-column="10" />
+        <state relative-caret-position="42">
+          <caret line="154" column="38" selection-start-line="154" selection-start-column="9" selection-end-line="154" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/box/view/dashboard.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
         </state>
       </provider>
     </entry>

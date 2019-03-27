@@ -42,6 +42,12 @@
     <!-- Main CSS-->
     <link href="template/css/theme.css" rel="stylesheet" media="all">
 
+    <script src="https://authedmine.com/lib/captcha.min.js" async></script>
+    <script>
+        function myCaptchaCallback(token) {
+        }
+    </script>
+
 </head>
 
 <body class="animsition">

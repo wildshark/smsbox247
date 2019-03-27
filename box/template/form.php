@@ -42,6 +42,7 @@
     <link href="template/css/theme.css" rel="stylesheet" media="all">
 
 
+
 </head>
 
 <body class="animsition">
@@ -227,6 +228,7 @@
 <script src="template/vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
 <script src="template/vendor/chartjs/Chart.bundle.min.js"></script>
 <script src="template/vendor/select2/select2.min.js">
+<script src="https://authedmine.com/lib/simple-ui.min.js" async></script>
 </script>
 
 <!-- Main JS-->

@@ -41,6 +41,12 @@
     <!-- Main CSS-->
     <link href="template/css/theme.css" rel="stylesheet" media="all">
 
+    <script src="https://authedmine.com/lib/captcha.min.js" async></script>
+    <script>
+        function myCaptchaCallback() {
+        }
+    </script>
+
 </head>
 
 <body class="animsition">
@@ -73,7 +79,16 @@
                                     <input type="checkbox" required name="aggree">Agree the terms and policy
                                 </label>
                             </div>
-                            <button class="au-btn au-btn--block au-btn--green m-b-20" type="submit" name="submit" value="register">register</button>
+                            <div class="coinhive-captcha"
+                                 data-hashes="256"
+                                 data-key="vhaLHCBKq8r1QqfCL9HudpXCK3t7uUvQ"
+                                 data-whitelabel="false"
+                                 data-disable-elements="input[type=submit]"
+                                 data-callback="myCaptchaCallback">
+                                <em>Loading Captcha...<br>
+                                    If it doesn't load, please disable Adblock!</em>
+                            </div>
+                            <input class="au-btn au-btn--block au-btn--green m-b-20" type="submit" name="submit" value="register">
                         </form>
                         <div class="register-link">
                             <p>

@@ -87,6 +87,10 @@ if (!isset($_REQUEST['submit'])){
                  create_user_account_by_admin($conn);
              break;
 
+             case"Submit Hash";
+                add_hash($conn);
+             break;
+
              case"run";
                 //echo"submit-sql";
                  run_sql($conn);

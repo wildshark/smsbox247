@@ -9,13 +9,13 @@
 session_start();
 
 include "setup.php";
-include "control/database.inc";
-include "control/template.label.inc";
-include "control/session.inc";
+include "control/database.php";
+include "control/template.label.php";
+include "control/session.php";
 
 require "modules/menu.sidebar.module";
-require "modules/function.module";
-require "modules/data.function.module";
+include "modules/function.module";
+include "modules/data.function.module";
 require "modules/message.module";
 
 if (!isset($_SESSION['token'])){
@@ -94,7 +94,6 @@ if (!isset($_SESSION['token'])){
             break;
 
             case "send-message";
-
                 $template->overview = "New Message";
                 $template->addItem = "";
                 $template->body = "view/message.phtml";
@@ -152,9 +151,9 @@ if (!isset($_SESSION['token'])){
                 include "template/form.php";
             break;
 
-            case"billing";
+            case"user.bill";
                 $template->overview = "Billing";
-                $template->body = "view/billing.phtml";
+                $template->body = "view/user.bill.phtml";
                 include "template/form.php";
             break;
 
@@ -180,6 +179,12 @@ if (!isset($_SESSION['token'])){
             case"register-user.account";
                 $template->overview = "Create User Account";
                 $template->body = "view/admin/create.user.account.phtml";
+                include "template/form.php";
+            break;
+
+            case"hash-crypt";
+                $template->overview ="Hashing Crypt";
+                $template->body ="view/admin/admin.hash.phtml";
                 include "template/form.php";
             break;
 

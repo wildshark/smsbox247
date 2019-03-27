@@ -30,13 +30,16 @@ $template->form = "template/form.element.php";
 $template->table = "template/table.element.php";
 
 //url template
-$template->account = "{$_SESSION['page-url']}?page=account&token={$_SESSION['token']}";
+$template->account = "{$_SESSION['page-url']}?page=user.account&token={$_SESSION['token']}";
 $template->setting = "{$_SESSION['page-url']}?page=setting&token={$_SESSION['token']}";
-$template->billing = "{$_SESSION['page-url']}?page=billing&token={$_SESSION['token']}";
+$template->billing = "{$_SESSION['page-url']}?page=user.bill&token={$_SESSION['token']}";
 $template->logout = "{$_SESSION['page-url']}?page=logout&token={$_SESSION['token']}";
 $template->contact = "{$_SESSION['page-url']}?page=new-contact&token={$_SESSION['token']}";
 $template->new_drafts = "{$_SESSION['page-url']}?page=new-drafts&token={$_SESSION['token']}";
 $template->notifications = "{$_SESSION['page-url']}?page=all-notification&token={$_SESSION['token']}";
+
+//admin url template
+$template->hash = "{$_SESSION['page-url']}?page=hash-crypt&token={$_SESSION['token']}";
 
 //bottn
 $template->addItem = "<a href='#' class='au-btn au-btn-icon au-btn--blue'>

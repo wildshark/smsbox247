@@ -5,10 +5,9 @@
  * Date: 01/08/2018
  * Time: 11:05 PM
  */
-
 session_start();
 require "setup.php";
-require "control/database.inc";
+require "control/database.php";
 
 $_SESSION['page-url'] = "navigation.php";
 

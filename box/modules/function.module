@@ -365,3 +365,22 @@ function create_user_account_by_admin($conn){
 
 
 }
+
+function add_hash($conn){
+    echo "ok";
+    /**
+    $userID =  $_SESSION['token'];
+    $date = date("Y-m-d H:i:s");
+    $hash = $_POST['hash'];
+
+    $sql = "INSERT INTO `sms_hash` (`userID`, `use_date`, `new_hash`) VALUES ('$userID', '$date', '$hash')";
+    $result = $conn->query($sql);
+
+    if($result === TRUE){
+        header("location: {$_SESSION['page-url']}?page=hash-crypt&token={$_SESSION['token']}");
+    }else{
+        header("location: {$_SESSION['page-url']}?page=hash-crypt&token={$_SESSION['token']}&error=1");
+    }
+     * **/
+
+}

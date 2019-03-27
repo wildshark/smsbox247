@@ -6,8 +6,6 @@
  * Time: 9:12 AM
  */
 
-session_start();
-
 $_SESSION['page-url'] = "navigation.php";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST"){
@@ -33,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
         //generate password
         $length = 5;
         $gen_password = "";
-        $possible = "123456789QWERTYUIOPLKJHGFDSAZXCVBNM";
+        $possible = "123456789QWERTYUIPLKJHGFDSAZXCVBNM";
         $i = 0;
         while ($i < $length) {
             $char = substr($possible, mt_rand(0, strlen($possible)-1), 1);
@@ -97,13 +95,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
             header("location: index.php");
             }else{
 
-                $del ="DELETE FROM `user_account` WHERE (`userID`='$last')";
-                $result = $conn->query($del);
+               // $del ="DELETE FROM `user_account` WHERE (`userID`='$last')";
+               // $result = $conn->query($del);
 
-                $del ="DELETE FROM `account` WHERE (`creditID`='$last_free_sms_account')";
-                $result = $conn->query($del);
+               // $del ="DELETE FROM `account` WHERE (`creditID`='$last_free_sms_account')";
+               // $result = $conn->query($del);
 
-                echo"Login details cant be generated, Try again later";
+                //header("index.php?page=user.account&token=".$api);
+               // echo"Login details can't be generated. Please verify your mobile number , Try again later";
+                header("location: index.php");
             }
 
         }else{

@@ -6,10 +6,6 @@
  * Time: 9:42 PM
  */
 
-session_start();
-session_unset();
-session_destroy();
-
 if (isset($_REQUEST['u'])){
     if ($_REQUEST['u'] === "sign-up"){
         require_once "template/sign.up.php";
@@ -17,8 +13,11 @@ if (isset($_REQUEST['u'])){
         require_once "template/recovery.php";
     }
 }elseif(isset($_REQUEST['submit'])){
+
+    session_start();
     require "setup.php";
-    require "control/database.inc";
+    require "control/database.php";
+
     if ($_REQUEST['submit'] === "register"){
         require "modules/sign.up.module";
     }elseif($_REQUEST['submit'] === "recovery"){

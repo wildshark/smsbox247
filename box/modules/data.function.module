@@ -5,6 +5,21 @@
  * Date: 03/08/2018
  * Time: 8:25 PM
  */
+
+function balance_hash($conn){
+
+    $sql ="SELECT * FROM `get_sms_hash_bal`";
+    $result = $conn->query($sql);
+    $hash = $result->fetch_assoc();
+
+    if (isset($hash['bal'])){
+        $bal_hash = $hash['bal'];
+    }else{
+        $bal_hash = 0;
+    }
+    return $bal_hash;
+}
+
 function admin_total_users($conn){
 
     $sql ="SELECT Count(userID) AS total FROM get_user_account";
@@ -43,10 +58,10 @@ function admin_sale($conn){
     }
 }
 
-function account($conn){
+function user_account($conn){
     $id =  $_SESSION['token'];
 
-    $sql = "SELECT * FROM get_account where userID ='".$id."'LIMIT 7";
+    $sql = "SELECT * FROM `get_account` where userID ='".$id."'LIMIT 7";
     $result = $conn->query($sql);
 
     while ($record = $result->fetch_assoc()){
@@ -84,7 +99,7 @@ function notification($conn){
     }
 }
 
-function balance($conn){
+function user_balance($conn){
 
     $userID = $_SESSION['token'];
     $sql = "SELECT * FROM get_balance where userID='$userID'";
@@ -102,15 +117,50 @@ function balance($conn){
 
 }
 
-function total_sms_send($conn){
+function user_total_sms_spend($conn){
 
     $userID = $_SESSION['token'];
     $sql = "SELECT * FROM get_spend where userID='$userID'";
     $result = $conn->query($sql);
     $record = $result->fetch_assoc();
 
-    if(isset($record['total_sms'])){
-        $total = $record['total_sms'];
+    if(isset($record['total_spend'])){
+        $total = $record['total_spend'];
+    }else{
+        $total = "0";
+    }
+
+    $x = number_format($total,2);
+    return $x;
+}
+
+function user_total_used_sms($conn){
+
+    $userID = $_SESSION['token'];
+    $sql = "SELECT * FROM get_spend where userID='$userID'";
+    $result = $conn->query($sql);
+    $record = $result->fetch_assoc();
+
+    if(isset($record['total_use'])){
+        $total = $record['total_use'];
+    }else{
+        $total = "0";
+    }
+
+    return $total;
+}
+
+//SELECT * FROM `get_total_deposit` LIMIT 0, 1000
+
+function user_total_deposit_sms($conn){
+
+    $userID = $_SESSION['token'];
+    $sql = "SELECT * FROM `get_total_deposit` where userID='$userID'";
+    $result = $conn->query($sql);
+    $record = $result->fetch_assoc();
+
+    if(isset($record['total'])){
+        $total = $record['total'];
     }else{
         $total = "0";
     }
@@ -299,4 +349,44 @@ function all_notification($conn){
     }
 }
 
+function sms_task($conn){
 
+    $sql = "SELECT * FROM `get_sms_task`";
+    $result = $conn->query($sql);
+    while ($record = $result->fetch_assoc()) {
+
+        if($record['status'] == 1) {
+            $css="au-task__item au-task__item--primary";
+        }elseif ($record['status'] == 2){
+            $css="au-task__item au-task__item--warning";
+        }elseif ($record['status'] == 3){
+            $css="au-task__item au-task__item--danger";
+        }
+        echo "
+        <div class='{$css}'>
+            <div class='au-task__item-inner'>
+                <h5 class='task'>
+                    <a href='#'>{$record['task']}</a>
+                </h5>
+                    <span class='time'>{$record['time']}</span>
+            </div>
+        </div>
+    ";
+    }
+}
+
+/**
+function sms_hash($conn){
+
+    $sql = "SELECT * FROM `get_sms_hash`";
+    $result = $conn->query($sql);
+    while ($record = $result->fetch_assoc()) {
+        echo "
+            <tr>
+                <td>{$record['user_date']}</td>
+                <td class=\"text-right\">{$record['user_hash']}</td>
+            </tr>
+    ";
+    }
+}
+ * **/
