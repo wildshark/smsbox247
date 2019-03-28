@@ -1,44 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1e169479-6ede-42d3-96d1-a4e079e3db25" name="Default" comment="make changes at the sign up page">
-      <change afterPath="$PROJECT_DIR$/box/control/session.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/box/test.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/box/view/admin/admin.hash.phtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/box/account.php" beforeDir="false" afterPath="$PROJECT_DIR$/box/account.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/box/control/database.inc" beforeDir="false" afterPath="$PROJECT_DIR$/box/control/database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/box/control/session.inc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/box/control/template.label.inc" beforeDir="false" afterPath="$PROJECT_DIR$/box/control/template.label.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/box/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/box/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/box/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/box/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/box/modules/Mail/RFC822.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/box/modules/Mail/mail.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/box/modules/Mail/mock.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/box/modules/Mail/null.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/box/modules/Mail/sendmail.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/box/modules/Mail/smtp.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/box/modules/Mail/smtpmx.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/box/modules/data.function.module" beforeDir="false" afterPath="$PROJECT_DIR$/box/modules/data.function.module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/box/modules/function.module" beforeDir="false" afterPath="$PROJECT_DIR$/box/modules/function.module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/box/modules/menu.sidebar.module" beforeDir="false" afterPath="$PROJECT_DIR$/box/modules/menu.sidebar.module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/box/modules/model.function.module" beforeDir="false" afterPath="$PROJECT_DIR$/box/modules/model.function.module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/box/modules/recovery.module" beforeDir="false" afterPath="$PROJECT_DIR$/box/modules/recovery.module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/box/modules/sign.up.module" beforeDir="false" afterPath="$PROJECT_DIR$/box/modules/sign.up.module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/box/modules/sms.send.module" beforeDir="false" afterPath="$PROJECT_DIR$/box/modules/sms.send.module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/box/navigation.php" beforeDir="false" afterPath="$PROJECT_DIR$/box/navigation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/box/setup.php" beforeDir="false" afterPath="$PROJECT_DIR$/box/setup.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/box/template/default.php" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/default.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/box/template/form.php" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/form.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/box/template/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/box/template/recovery.php" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/recovery.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/box/template/sign.up.php" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/sign.up.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/box/view/admin/admin.dashboard.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/box/view/admin/admin.dashboard.phtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/box/view/billing.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/box/view/user.bill.phtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/box/view/dashboard.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/box/view/dashboard.phtml" afterDir="false" />
-    </list>
+    <list default="true" id="1e169479-6ede-42d3-96d1-a4e079e3db25" name="Default" comment="make changes at the sign up page" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +57,7 @@
     <session id="-1559013218">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="8" />
+          <entry key="project.closed" value="9" />
           <entry key="project.open.time.2" value="2" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="2" />
@@ -156,20 +119,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/box/modules/data.function.module">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="42">
               <caret line="154" column="38" selection-start-line="154" selection-start-column="9" selection-end-line="154" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/box/view/dashboard.phtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -375,7 +329,7 @@
       <workItem from="1538159968634" duration="15656000" />
       <workItem from="1538287219099" duration="21933000" />
       <workItem from="1539116748421" duration="709000" />
-      <workItem from="1553640440853" duration="7445000" />
+      <workItem from="1553640440853" duration="7529000" />
     </task>
     <task id="LOCAL-00001" summary="make changes at the sign up page">
       <created>1537081162087</created>
@@ -388,7 +342,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="282838000" />
+    <option name="totallyTimeSpent" value="282922000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -817,17 +771,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/box/modules/data.function.module">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="154" column="38" selection-start-line="154" selection-start-column="9" selection-end-line="154" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/box/view/dashboard.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/box/modules/data.function.module">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="154" column="38" selection-start-line="154" selection-start-column="9" selection-end-line="154" selection-end-column="38" />
         </state>
       </provider>
     </entry>
