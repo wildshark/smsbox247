@@ -27,6 +27,7 @@ function pop_account(){
         echo" <script type=\"text/javascript\"></script>";
     }
 }
+
 function generatePassword ($length = 5){
     $gen_password = "";
     $possible = "0123456789abcdefghijklmnopqrstuvwxyz";
@@ -265,8 +266,6 @@ function payment($conn){
     }else{
         header("location: {$_SESSION['page-url']}?page=billing&token={$_SESSION['token']}");
     }
-
-
 }
 
 function top_up_credit($conn){
@@ -285,16 +284,12 @@ function top_up_credit($conn){
         $insert_account = "INSERT INTO `account` (`userID`, `tranDate`, `details`, `ref`, `paid`) VALUES ('$userID', '$date', '$details', '$invoice', '$payment')";
         $account = $conn->query($insert_account);
 
-
-
         if ($account == TRUE){
             header("location: {$_SESSION['page-url']}?page=top-up&token={$_SESSION['token']}");
         }else{
             header("location: {$_SESSION['page-url']}?page=dashboard&token={$_SESSION['token']}");
         }
-
     }
-
 }
 
 function run_sql($conn){
@@ -310,9 +305,7 @@ function run_sql($conn){
         }else{
             header("location: {$_SESSION['page-url']}?page=dashboard&token={$_SESSION['token']}");
         }
-
     }
-
 }
 
 function delete_user_account($conn){
@@ -362,25 +355,4 @@ function create_user_account_by_admin($conn){
             echo"system error fail to upload data to server";
         }
     }
-
-
-}
-
-function add_hash($conn){
-    echo "ok";
-    /**
-    $userID =  $_SESSION['token'];
-    $date = date("Y-m-d H:i:s");
-    $hash = $_POST['hash'];
-
-    $sql = "INSERT INTO `sms_hash` (`userID`, `use_date`, `new_hash`) VALUES ('$userID', '$date', '$hash')";
-    $result = $conn->query($sql);
-
-    if($result === TRUE){
-        header("location: {$_SESSION['page-url']}?page=hash-crypt&token={$_SESSION['token']}");
-    }else{
-        header("location: {$_SESSION['page-url']}?page=hash-crypt&token={$_SESSION['token']}&error=1");
-    }
-     * **/
-
 }

@@ -13,7 +13,7 @@ if (!isset($_REQUEST['submit'])){
      $token = $_REQUEST['token'];
 
      if (!$_SESSION['token'] === $token){
-         echo "wrong token or cant find token";
+         echo "<h1>SERVER SESSION ERROR</h1><P>wrong token or cant find token. click here to go <a href='{$_SERVER['HTTP_REFERER']}'>back</a> </P>";
      }else{
 
          switch ($action){
@@ -45,7 +45,7 @@ if (!isset($_REQUEST['submit'])){
                  if($record['bal'] > 1.00){
                      include "sms.send.module";
                  }else{
-                    echo "LOW FUNDS. TOP UP WALLET";
+                    echo "<h1>LOW FUNDS. TOP UP WALLET</h1><br>please click here to <a href='navigation.php?page=user.bill&token={$_SESSION['token']}'>Top-up</a> or to <a href='{$_SERVER['HTTP_REFERER']}'>return back.</a>";
                  }
              break;
 

@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e169479-6ede-42d3-96d1-a4e079e3db25" name="Default" comment="make changes at the sign up page">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/box/account.php" beforeDir="false" afterPath="$PROJECT_DIR$/box/account.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/box/setup.php" beforeDir="false" afterPath="$PROJECT_DIR$/box/setup.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/box/template/sign.up.php" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/sign.up.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/box/modules/function.module" beforeDir="false" afterPath="$PROJECT_DIR$/box/modules/function.module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/box/modules/message.module" beforeDir="false" afterPath="$PROJECT_DIR$/box/modules/message.module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/box/modules/model.function.module" beforeDir="false" afterPath="$PROJECT_DIR$/box/modules/model.function.module" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -171,7 +169,7 @@
       <workItem from="1538287219099" duration="21933000" />
       <workItem from="1539116748421" duration="709000" />
       <workItem from="1553640440853" duration="7529000" />
-      <workItem from="1575126842320" duration="1146000" />
+      <workItem from="1575126842320" duration="3345000" />
     </task>
     <task id="LOCAL-00001" summary="make changes at the sign up page">
       <created>1537081162087</created>
