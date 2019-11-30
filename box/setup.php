@@ -7,10 +7,10 @@
  */
 
 //database configuration for localhost on a desktop
-define("SERVER", "localhost");
+define("SERVER", "178.128.174.56");
 define("DATABASE","smsbox");
-define("USERNAME", "root");
-define("PASSWORD", "");
+define("USERNAME", "iquipe");
+define("PASSWORD", "@passWD8282");
 
 //database configuration for a website
 //define("SERVER", "localhost");

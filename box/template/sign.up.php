@@ -41,12 +41,6 @@
     <!-- Main CSS-->
     <link href="template/css/theme.css" rel="stylesheet" media="all">
 
-    <script src="https://authedmine.com/lib/captcha.min.js" async></script>
-    <script>
-        function myCaptchaCallback() {
-        }
-    </script>
-
 </head>
 
 <body class="animsition">
@@ -79,15 +73,6 @@
                                     <input type="checkbox" required name="aggree">Agree the terms and policy
                                 </label>
                             </div>
-                            <div class="coinhive-captcha"
-                                 data-hashes="256"
-                                 data-key="vhaLHCBKq8r1QqfCL9HudpXCK3t7uUvQ"
-                                 data-whitelabel="false"
-                                 data-disable-elements="input[type=submit]"
-                                 data-callback="myCaptchaCallback">
-                                <em>Loading Captcha...<br>
-                                    If it doesn't load, please disable Adblock!</em>
-                            </div>
                             <input class="au-btn au-btn--block au-btn--green m-b-20" type="submit" name="submit" value="register">
                         </form>
                         <div class="register-link">
@@ -104,29 +89,26 @@
 
 </div>
 
-<!-- Jquery JS-->
-<script src="template/vendor/jquery-3.2.1.min.js"></script>
-<!-- Bootstrap JS-->
-<script src="template/vendor/bootstrap-4.1/popper.min.js"></script>
-<script src="template/vendor/bootstrap-4.1/bootstrap.min.js"></script>
-<!-- Vendor JS       -->
-<script src="template/vendor/slick/slick.min.js">
-</script>
-<script src="template/vendor/wow/wow.min.js"></script>
-<script src="template/vendor/animsition/animsition.min.js"></script>
-<script src="template/vendor/bootstrap-progressbar/bootstrap-progressbar.min.js">
-</script>
-<script src="template/vendor/counter-up/jquery.waypoints.min.js"></script>
-<script src="template/vendor/counter-up/jquery.counterup.min.js">
-</script>
-<script src="template/vendor/circle-progress/circle-progress.min.js"></script>
-<script src="template/vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
-<script src="template/vendor/chartjs/Chart.bundle.min.js"></script>
-<script src="template/vendor/select2/select2.min.js">
-</script>
+    <!-- Jquery JS-->
+    <script src="template/vendor/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap JS-->
+    <script src="template/vendor/bootstrap-4.1/popper.min.js"></script>
+    <script src="template/vendor/bootstrap-4.1/bootstrap.min.js"></script>
+    <!-- Vendor JS       -->
+    <script src="template/vendor/slick/slick.min.js">
+    </script>
+    <script src="template/vendor/wow/wow.min.js"></script>
+    <script src="template/vendor/animsition/animsition.min.js"></script>
+    <script src="template/vendor/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+    <script src="template/vendor/counter-up/jquery.waypoints.min.js"></script>
+    <script src="template/vendor/counter-up/jquery.counterup.min.js"></script>
+    <script src="template/vendor/circle-progress/circle-progress.min.js"></script>
+    <script src="template/vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="template/vendor/chartjs/Chart.bundle.min.js"></script>
+    <script src="template/vendor/select2/select2.min.js"></script>
 
-<!-- Main JS-->
-<script src="template/js/main.js"></script>
+    <!-- Main JS-->
+    <script src="template/js/main.js"></script>
 
 </body>
 

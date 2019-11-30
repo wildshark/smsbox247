@@ -12,7 +12,7 @@ include "setup.php";
 include "control/database.php";
 
 if ($_SESSION['token'] !== $_REQUEST['token']){
-    echo "server error";
+    echo "<h1>Server Error</h1>";
 }else {
     $userID = $_SESSION['token'];
     $id = $_SESSION['user-id'];

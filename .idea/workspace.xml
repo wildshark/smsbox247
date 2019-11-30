@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1e169479-6ede-42d3-96d1-a4e079e3db25" name="Default" comment="make changes at the sign up page" />
+    <list default="true" id="1e169479-6ede-42d3-96d1-a4e079e3db25" name="Default" comment="make changes at the sign up page">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/box/account.php" beforeDir="false" afterPath="$PROJECT_DIR$/box/account.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/box/setup.php" beforeDir="false" afterPath="$PROJECT_DIR$/box/setup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/box/template/sign.up.php" beforeDir="false" afterPath="$PROJECT_DIR$/box/template/sign.up.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -53,83 +65,6 @@
     </expand>
     <select />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-1559013218">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="9" />
-          <entry key="project.open.time.2" value="2" />
-          <entry key="project.open.time.3" value="1" />
-          <entry key="project.open.time.4" value="2" />
-          <entry key="project.open.time.41" value="1" />
-          <entry key="project.open.time.51" value="1" />
-          <entry key="project.open.time.6" value="2" />
-          <entry key="project.open.time.72" value="1" />
-          <entry key="project.opened" value="10" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="bash_history" value="1" />
-          <entry key="gitattributes" value="1" />
-          <entry key="gitignore" value="1" />
-          <entry key="html" value="2" />
-          <entry key="inc" value="5" />
-          <entry key="md" value="2" />
-          <entry key="module" value="36" />
-          <entry key="php" value="63" />
-          <entry key="phtml" value="30" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="HTML" value="2" />
-          <entry key="Markdown" value="2" />
-          <entry key="PHP" value="134" />
-          <entry key="PLAIN_TEXT" value="3" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.php.composer.command.options" />
-      <usages-collector id="statistics.php.new.class" />
-      <usages-collector id="statistics.vcs.git.usages" />
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="inc" value="114" />
-          <entry key="md" value="62" />
-          <entry key="module" value="1912" />
-          <entry key="php" value="1140" />
-          <entry key="phtml" value="908" />
-          <entry key="txt" value="42" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.js.language.service.starts" />
-      <usages-collector id="statistics.php.rename.constructor" />
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="HTML" value="28" />
-          <entry key="Markdown" value="62" />
-          <entry key="PHP" value="4043" />
-          <entry key="PLAIN_TEXT" value="42" />
-          <entry key="SQL" value="3" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.php.new.test" />
-      <usages-collector id="statistics.php.composer.actions" />
-    </session>
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/box/modules/data.function.module">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="154" column="38" selection-start-line="154" selection-start-column="9" selection-end-line="154" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>src=&quot;vendor</find>
@@ -167,113 +102,19 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/control/session.inc" />
-        <option value="$PROJECT_DIR$/view/admin/create.sql.phtml" />
-        <option value="$PROJECT_DIR$/view/admin/user.account.phtml" />
-        <option value="$PROJECT_DIR$/view/admin/top.up.phtml" />
-        <option value="$PROJECT_DIR$/login.php" />
-        <option value="$PROJECT_DIR$/modules/data.function.module" />
-        <option value="$PROJECT_DIR$/view/admin/admin.dashboard.phtml" />
-        <option value="$PROJECT_DIR$/view/chat.messager.phtml" />
-        <option value="$PROJECT_DIR$/view/admin/list.user.account.phtml" />
-        <option value="$PROJECT_DIR$/modules/mazzuma.payment.module" />
-        <option value="$PROJECT_DIR$/modules/menu.sidebar.module" />
-        <option value="$PROJECT_DIR$/view/admin/create.user.account.phtml" />
-        <option value="$PROJECT_DIR$/modules/model.function.module" />
-        <option value="$PROJECT_DIR$/setup.php" />
-        <option value="$PROJECT_DIR$/navigation.php" />
-        <option value="$PROJECT_DIR$/view/user.account.phtml" />
-        <option value="$PROJECT_DIR$/template/sign.up.php" />
-        <option value="$PROJECT_DIR$/modules/sign.up.module" />
-        <option value="$PROJECT_DIR$/modules/function.module" />
-        <option value="$PROJECT_DIR$/topup.php" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/box/modules/message.module" />
-        <option value="$PROJECT_DIR$/box/template/quick.sms.php" />
-        <option value="$PROJECT_DIR$/box/template/login.php" />
-        <option value="$PROJECT_DIR$/box/setup.php" />
-        <option value="$PROJECT_DIR$/box/control/database.inc" />
-        <option value="$PROJECT_DIR$/box/index.php" />
-        <option value="$PROJECT_DIR$/box/control/session.inc" />
-        <option value="$PROJECT_DIR$/box/login.php" />
-        <option value="$PROJECT_DIR$/box/view/user.account.phtml" />
-        <option value="$PROJECT_DIR$/box/view/billing.phtml" />
-        <option value="$PROJECT_DIR$/box/account.php" />
-        <option value="$PROJECT_DIR$/box/view/user.bill.phtml" />
-        <option value="$PROJECT_DIR$/box/modules/recovery.module" />
-        <option value="$PROJECT_DIR$/box/template/recovery.php" />
-        <option value="$PROJECT_DIR$/box/template/sign.up.php" />
-        <option value="$PROJECT_DIR$/box/modules/sign.up.module" />
-        <option value="$PROJECT_DIR$/box/view/admin/admin.dashboard.phtml" />
-        <option value="$PROJECT_DIR$/box/control/template.label.php" />
-        <option value="$PROJECT_DIR$/box/modules/menu.sidebar.module" />
-        <option value="$PROJECT_DIR$/box/template/default.php" />
-        <option value="$PROJECT_DIR$/box/template/form.php" />
-        <option value="$PROJECT_DIR$/box/modules/function.module" />
-        <option value="$PROJECT_DIR$/box/navigation.php" />
-        <option value="$PROJECT_DIR$/box/view/admin/admin.hash.phtml" />
-        <option value="$PROJECT_DIR$/box/modules/model.function.module" />
-        <option value="$PROJECT_DIR$/box/test.php" />
-        <option value="$PROJECT_DIR$/box/view/message.phtml" />
-        <option value="$PROJECT_DIR$/box/modules/sms.send.module" />
-        <option value="$PROJECT_DIR$/box/modules/data.function.module" />
-        <option value="$PROJECT_DIR$/box/view/dashboard.phtml" />
-      </list>
-    </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="PhpServers">
-    <servers />
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="631" />
-    <option name="y" value="33" />
-    <option name="width" value="697" />
-    <option name="height" value="735" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="smsbox247" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smsbox247" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="smsbox247" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smsbox247" type="462c0819:PsiDirectoryNode" />
-              <item name="box" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="smsbox247" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smsbox247" type="462c0819:PsiDirectoryNode" />
-              <item name="box" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
-  </component>
+  <component name="ProjectId" id="1ULDAHePbXL7dBzlFbRnH8Zacby" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="database.console.LAST_STATE" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
@@ -330,6 +171,7 @@
       <workItem from="1538287219099" duration="21933000" />
       <workItem from="1539116748421" duration="709000" />
       <workItem from="1553640440853" duration="7529000" />
+      <workItem from="1575126842320" duration="1146000" />
     </task>
     <task id="LOCAL-00001" summary="make changes at the sign up page">
       <created>1537081162087</created>
@@ -341,64 +183,6 @@
     <option name="localTasksCounter" value="2" />
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="282922000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.5102041" />
-      <window_info id="Favorites" order="1" side_tool="true" weight="0.32980332" />
-      <window_info id="Structure" order="2" side_tool="true" weight="0.24901961" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Database Console" order="1" weight="0.47341338" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="4" weight="0.43278688" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32991454" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50075644" side_tool="true" weight="0.32933104" />
-      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32991454" />
-      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
-      <window_info anchor="bottom" id="Database Changes" order="11" />
-      <window_info anchor="bottom" id="Version Control" order="12" weight="0.3295082" />
-      <window_info anchor="bottom" id="File Transfer" order="13" sideWeight="0.49924356" visible="true" weight="0.32786885" />
-      <window_info anchor="bottom" id="Heroku" order="14" weight="0.3295082" />
-      <window_info anchor="right" id="Remote Host" order="0" weight="0.3290469" />
-      <window_info anchor="right" id="Commander" order="1" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
-      <window_info anchor="right" x="605" y="350" width="444" height="168" id="Documentation" order="4" type="FLOATING" weight="0.32977098" />
-      <window_info anchor="right" id="Database" order="5" weight="0.26172465" />
-    </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.19515885" />
-      <window_info id="Favorites" order="1" side_tool="true" weight="0.32980332" />
-      <window_info id="Structure" order="2" side_tool="true" weight="0.24901961" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Database Console" order="1" weight="0.47341338" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="4" weight="0.43396226" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32991454" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50075644" side_tool="true" weight="0.32933104" />
-      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32991454" />
-      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
-      <window_info anchor="bottom" id="Database Changes" order="11" />
-      <window_info anchor="bottom" id="Version Control" order="12" />
-      <window_info anchor="bottom" id="File Transfer" order="13" sideWeight="0.49924356" visible="true" weight="0.32933104" />
-      <window_info anchor="right" id="Remote Host" order="0" weight="0.3290469" />
-      <window_info anchor="right" id="Commander" order="1" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
-      <window_info anchor="right" x="605" y="350" width="444" height="168" id="Documentation" order="4" type="FLOATING" weight="0.32977098" />
-      <window_info anchor="right" id="Database" order="5" weight="0.26172465" />
-    </layout-to-restore>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
@@ -408,28 +192,12 @@
         <entry key="MAIN">
           <value>
             <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-              <option name="COLUMN_ORDER">
-                <list>
-                  <option value="0" />
-                  <option value="1" />
-                  <option value="2" />
-                  <option value="3" />
-                </list>
-              </option>
+              <option name="COLUMN_ORDER" />
             </State>
           </value>
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="make changes at the sign up page" />
@@ -445,346 +213,6 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/view/chat.messager.phtml" />
-    <entry file="file://$PROJECT_DIR$/box/view/admin/list.user.account.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="61" selection-start-line="61" selection-end-line="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/box/modules/mazzuma.payment.module">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/box/view/add.contact.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-103">
-          <caret line="51" column="73" selection-start-line="51" selection-start-column="22" selection-end-line="51" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/box/view/admin/top.up.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="58" column="22" lean-forward="true" selection-start-line="52" selection-start-column="16" selection-end-line="58" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/box/view/delete.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="8" selection-start-line="8" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/box/view/view.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="153">
-            <caret line="9" selection-start-line="9" selection-end-line="9" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/box/topup.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitattributes">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/box/modules/Mail.php" />
-    <entry file="file://$PROJECT_DIR$/box/modules/message.module">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/box/template/quick.sms.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="50" column="89" selection-start-line="50" selection-start-column="89" selection-end-line="50" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/box/mail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="16" column="2" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/box/control/database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="17" column="19" lean-forward="true" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/box/control/session.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/box/modules/recovery.module">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-12">
-          <caret line="22" column="49" lean-forward="true" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/box/modules/sign.up.module">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="105" column="46" selection-start-line="105" selection-start-column="46" selection-end-line="105" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/box/template/recovery.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="69" column="49" selection-start-line="69" selection-start-column="49" selection-end-line="69" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/box/setup.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/box/view/admin/admin.account.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="174" lean-forward="true" selection-start-line="72" selection-start-column="22" selection-end-line="174" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/box/control/template.label.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="41" column="58" selection-start-line="41" selection-start-column="58" selection-end-line="41" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/box/modules/menu.sidebar.module">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="30" column="59" lean-forward="true" selection-start-line="30" selection-start-column="49" selection-end-line="30" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/box/view/admin/admin.dashboard.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="54" column="22" lean-forward="true" selection-start-line="54" selection-start-column="22" selection-end-line="54" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/box/view/admin/create.user.account.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
-          <caret line="69" column="67" selection-start-line="69" selection-start-column="67" selection-end-line="69" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/box/view/address.book.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="18" column="53" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/box/view/inbox.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/box/view/setting.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/box/view/user.account.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1161">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/box/template/sign.up.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="89" column="34" lean-forward="true" selection-start-line="81" selection-start-column="28" selection-end-line="89" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/box/template/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="46" column="43" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/box/template/form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3123">
-          <caret line="42" column="4" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/box/template/default.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="262" column="22" lean-forward="true" selection-start-line="262" selection-start-column="22" selection-end-line="262" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/box/view/admin/admin.hash.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="27" column="67" selection-start-line="27" selection-start-column="67" selection-end-line="27" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/box/modules/function.module">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4658">
-          <caret line="368" column="24" selection-start-line="368" selection-start-column="9" selection-end-line="368" selection-end-column="24" />
-          <folding>
-            <element signature="n#top_up_credit#0;n#!!top" />
-            <element signature="n#run_sql#0;n#!!top" />
-            <element signature="n#delete_user_account#0;n#!!top" />
-            <element signature="n#create_user_account_by_admin#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/box/view/user.bill.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="30" column="77" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/box/view/drafts.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="19" column="48" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/box/account.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/box/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/box/modules/model.function.module">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="99" column="1" selection-start-line="99" selection-start-column="1" selection-end-line="99" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/box/navigation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5">
-          <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.bash_history">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/box/view/message.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="33" column="75" selection-start-line="33" selection-start-column="75" selection-end-line="33" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/box/modules/sms.send.module">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="93" column="25" lean-forward="true" selection-start-line="93" selection-start-column="25" selection-end-line="93" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/box/test.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/box/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="58" column="96" lean-forward="true" selection-start-line="58" selection-start-column="96" selection-end-line="58" selection-end-column="96" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/box/view/sent.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/box/view/dashboard.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/box/modules/data.function.module">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="154" column="38" selection-start-line="154" selection-start-column="9" selection-end-line="154" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
   </component>
   <component name="masterDetails">
     <states>
